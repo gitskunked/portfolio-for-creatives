@@ -108,9 +108,9 @@ html {
   --heart-color: #EA96B6;
   --holding-page-footer-color: #F7EAE8;
   --text-selection-background-color: #0F000B;
-  --linear-gradient-color-1: #ff057c;
-  --linear-gradient-color-2: #8d0b93;
-  --linear-gradient-color-3: #321575;
+  --linear-gradient-color-1: #EA96B6;
+  --linear-gradient-color-2: #0147C1;
+  --linear-gradient-color-3: #276418;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -151,15 +151,16 @@ svg {
 */
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: var(--heading-typeface);
-  font-weight: 800;
+  font-weight: 900;
   margin-bottom: 1rem;
   color: var(--h1-color);
 }
 
 h2 {
   font-size: 2.25rem;
+  font-weight: 700;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--h2-color);
@@ -174,6 +175,8 @@ h3 {
 
 h4 {
   font-size: 1.2rem;
+  font-weight: 500;
+  font-style: italic;
   margin-bottom: 1rem;
   color: var(--h4-color);
 }
