@@ -11,6 +11,7 @@
 /* TODO: Delete the Google Fonts below and add the Google Fonts you want to use on your site. Each Google font that you load will slightly increase the download speed of your site so make sure to only included necessary fonts here. */
 
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@import url('https://fonts.cdnfonts.com/css/open-sauce-one');
 
 /*
 
@@ -77,36 +78,36 @@ html {
 /* TODO: Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
-  --body-typeface: "Figtree", sans-serif;
-  --heading-typeface: "Figtree", sans-serif;
-  --project-title-typeface: "Figtree", sans-serif;
-  --background-color: #F7EBE9;
-  --background-color-about: #F7EBE9;
-  --background-color-footer: #F7EBE9;
+  --body-typeface: "Open Sauce Two", "Figtree", sans-serif;
+  --heading-typeface: "Open Sauce Two","Figtree", sans-serif;
+  --project-title-typeface: "Open Sauce Two","Figtree", sans-serif;
+  --background-color: #F7EAE8;
+  --background-color-about: #F7EAE8;
+  --background-color-footer: #F7EAE8;
   --alt-background-color: #000000;
-  --background-color-holding-page: #12060D;
-  --h1-color: #12060D;
-  --h2-color: #12060D;
-  --h3-color: #12060D;
-  --h4-color: #12060D;
-  --h5-color: #12060D;
-  --h6-color: #12060D;
-  --primary-text-color: #222;
-  --holding-page-title-color: #F7EBE9;
-  --accent-color: #12060D;
-  --overlay-color: #12060D;
-  --overlay-title-color: #F7EBE9;
-  --overlay-description-color: #F7EBE9;
-  --hyperlink-color: #12060D;
+  --background-color-holding-page: #0F000B;
+  --h1-color: #0F000B;
+  --h2-color: #0F000B;
+  --h3-color: #0F000B;
+  --h4-color: #0F000B;
+  --h5-color: #0F000B;
+  --h6-color: #0F000B;
+  --primary-text-color: #0F000B;
+  --holding-page-title-color: #F7EAE8;
+  --accent-color: #0F000B;
+  --overlay-color: #0F000B;
+  --overlay-title-color: #F7EAE8;
+  --overlay-description-color: #F7EAE8;
+  --hyperlink-color: #0F000B;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
-  --visited-color: #12060D;
-  --project-title-color: #12060D;
+  --visited-color: #0F000B;
+  --project-title-color: #0F000B;
   --project-sidebar-background-color: orangered;
-  --project-sidebar-text-color: #F7EBE9;
-  --heart-color: darkred;
-  --holding-page-footer-color: #F7EBE9f;
-  --text-selection-background-color: #12060D;
+  --project-sidebar-text-color: #F7EAE8;
+  --heart-color: #EA96B6;
+  --holding-page-footer-color: #F7EAE8;
+  --text-selection-background-color: #0F000B;
   --linear-gradient-color-1: #ff057c;
   --linear-gradient-color-2: #8d0b93;
   --linear-gradient-color-3: #321575;
@@ -152,6 +153,7 @@ svg {
 h1 {
   font-size: 2rem;
   font-family: var(--heading-typeface);
+  font-weight: 800;
   margin-bottom: 1rem;
   color: var(--h1-color);
 }
