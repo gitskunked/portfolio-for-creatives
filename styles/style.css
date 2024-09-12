@@ -84,7 +84,7 @@ html {
   --background-color-about: #F7EAE8;
   --background-color-footer: #F7EAE8;
   --alt-background-color: #000000;
-  --background-color-holding-page: #276418;
+  --background-color-holding-page: #0147C1;
   --h1-color: #0F000B;
   --h2-color: #0F000B;
   --h3-color: #0F000B;
@@ -94,22 +94,22 @@ html {
   --primary-text-color: #0F000B;
   --holding-page-title-color: #F7EAE8;
   --accent-color: #0147C1;
-  --overlay-color: #EA96B6;
+  --overlay-color: #276418;
   --overlay-title-color: #F7EAE8;
   --overlay-description-color: #F7EAE8;
-  --hyperlink-color: #0147C1;
-  --hyperlink-alternate-color: #0147C1;
-  --hover-color: #EA96B6;
-  --visited-color: #276418;
+  --hyperlink-color: #0F000B;
+  --hyperlink-alternate-color: #0F000B;
+  --hover-color: #0147C1;
+  --visited-color: #0F000B;
   --project-title-color: #0F000B;
-  --project-sidebar-background-color: #0147C1;
-  --project-sidebar-text-color: #F7EAE8;
+  --project-sidebar-background-color: #F7EAE8;
+  --project-sidebar-text-color: #0F000B;
   --heart-color: #EA96B6;
   --holding-page-footer-color: #F7EAE8;
   --text-selection-background-color: #0F000B;
-  --linear-gradient-color-1: #EA96B6;
-  --linear-gradient-color-2: #0147C1;
-  --linear-gradient-color-3: #276418;
+  --linear-gradient-color-1: #F7EAE8;
+  --linear-gradient-color-2: #F0B9CA;
+  --linear-gradient-color-3: #EA96B6;
   --stroke-shadow-color: #276418;
 }
 
@@ -239,6 +239,7 @@ a:visited {
 
 a:hover {
   color: var(--hover-color);
+  text-decoration: underline;
 }
 
 a:focus {
@@ -247,6 +248,7 @@ a:focus {
 
 a:active {
   color: var(--hover-color);
+  text-decoration: underline;
   /* Tap on mobile */
 }
 

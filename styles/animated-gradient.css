@@ -1,11 +1,11 @@
 :root {
-    --gradient: linear-gradient(45deg,#EA96B6, #0147C1, #276418,);
+    --gradient: linear-gradient(45deg,#F7EAE8, #F0B9CA, #EA96B6);
 }
 
 .gradient-animation {
-    background-size: 600%;
+    background-size: 900%;
     background-image: var(--gradient);
-    animation: bg-animation 90s infinite alternate;
+    animation: bg-animation 10s infinite alternate;
 }
 
 @keyframes bg-animation {
