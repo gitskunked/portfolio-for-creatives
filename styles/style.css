@@ -97,10 +97,10 @@ html {
   --overlay-color: #276418;
   --overlay-title-color: #F7EAE8;
   --overlay-description-color: #F7EAE8;
-  --hyperlink-color: #0F000B;
-  --hyperlink-alternate-color: #0F000B;
-  --hover-color: #0147C1;
-  --visited-color: #0F000B;
+  --hyperlink-color: #276418;
+  --hyperlink-alternate-color: #276418;
+  --hover-color: #EA96B6;
+  --visited-color: #0147C1;
   --project-title-color: #0F000B;
   --project-sidebar-background-color: #F7EAE8;
   --project-sidebar-text-color: #0F000B;
@@ -135,7 +135,7 @@ svg {
   height: auto;
   vertical-align: top;
   /* Removes the gap/space in inline elements for text descenders. */
-  object-fit: contain;
+  object-fit: cover;
   /* This is optional. Also try cover or leave out entirely. */
 }
 
@@ -333,7 +333,7 @@ a:active {
 }
 
 .logo {
-  width: 3rem;
+  width: 10rem;
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
