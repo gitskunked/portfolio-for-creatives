@@ -84,7 +84,7 @@ html {
   --background-color-about: #F7EAE8;
   --background-color-footer: #F7EAE8;
   --alt-background-color: #000000;
-  --background-color-holding-page: #0147C1;
+  --background-color-holding-page: #0F000B;
   --h1-color: #0F000B;
   --h2-color: #0F000B;
   --h3-color: #0F000B;
@@ -221,7 +221,7 @@ em {
   font-size: 3.725rem;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .overlay-title {
@@ -242,19 +242,23 @@ a:link {
   font-weight: 600;
   line-height: 1.5;
   text-decoration: none;
+  transition: 0.5s ease-in-out;
 }
 
 a:visited {
   color: var(--visited-color);
+  transition: 0.5s ease-in-out;
 }
 
 a:hover {
   color: var(--hover-color);
+  transition: 0.5s ease-in-out;
   text-decoration: underline;
 }
 
 a:focus {
   outline: 1px solid var(--accent-color);
+  transition: 0.5s ease-in-out;
 }
 
 a:active {
@@ -315,8 +319,8 @@ a:active {
 
 .project-description {
   font-size: 1.225rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
 }
 
 /* Hero 
@@ -344,7 +348,7 @@ a:active {
 }
 
 .logo {
-  width: 10rem;
+  width: 3rem;
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
@@ -620,16 +624,14 @@ a:active {
   width: 100%;
   min-height: 100vh;
   /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1), var(--background-color-holding-page)), url(/assets/temp/noise.svg);
-  /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
+  background: var(--background-color-holding-page);
 }
 
 .holding-page-animation {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .holding-page-title {
-  font-size: 1.5rem;
   color: var(--holding-page-title-color);
 }
 
