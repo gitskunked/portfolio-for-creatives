@@ -11,7 +11,7 @@
 /* TODO: Delete the Google Fonts below and add the Google Fonts you want to use on your site. Each Google font that you load will slightly increase the download speed of your site so make sure to only included necessary fonts here. */
 
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
-@import url('https://fonts.cdnfonts.com/css/open-sauce-one');
+@import url("https://fonts.cdnfonts.com/css/open-sauce-one");
 
 /*
 
@@ -78,39 +78,41 @@ html {
 
 :root {
   --body-typeface: "Open Sauce Two", "Figtree", sans-serif;
-  --heading-typeface: "Open Sauce Two","Figtree", sans-serif;
-  --project-title-typeface: "Open Sauce Two","Figtree", sans-serif;
-  --background-color: #F7EAE8;
-  --background-color-about: #F7EAE8;
-  --background-color-footer: #F7EAE8;
+  --heading-typeface: "Open Sauce Two", "Figtree", sans-serif;
+  --project-title-typeface: "Open Sauce Two", "Figtree", sans-serif;
+  --background-color: #f7eae8;
+  --background-color-about: #f7eae8;
+  --background-color-footer: #f7eae8;
   --alt-background-color: #000000;
-  --background-color-holding-page: #0F000B;
-  --h1-color: #0F000B;
-  --h2-color: #0F000B;
-  --h3-color: #0F000B;
-  --h4-color: #0F000B;
-  --h5-color: #0F000B;
-  --h6-color: #0F000B;
-  --primary-text-color: #0F000B;
-  --holding-page-title-color: #F7EAE8;
-  --accent-color: #0147C1;
+  --background-color-holding-page: #0f000b;
+  --h1-color: #0f000b;
+  --h2-color: #0f000b;
+  --h3-color: #0f000b;
+  --h4-color: #0f000b;
+  --h5-color: #0f000b;
+  --h6-color: #0f000b;
+  --primary-text-color: #0f000b;
+  --holding-page-title-color: #f7eae8;
+  --accent-color: #0147c1;
   --overlay-color: #276418;
-  --overlay-title-color: #F7EAE8;
-  --overlay-description-color: #F7EAE8;
+  --overlay-title-color: #000;
+  --overlay-description-color: #000;
   --hyperlink-color: #276418;
   --hyperlink-alternate-color: #276418;
-  --hover-color: #EA96B6;
-  --visited-color: #0147C1;
-  --project-title-color: #0F000B;
-  --project-sidebar-background-color: #F7EAE8;
-  --project-sidebar-text-color: #0F000B;
-  --heart-color: #EA96B6;
-  --holding-page-footer-color: #F7EAE8;
-  --text-selection-background-color: #0F000B;
-  --linear-gradient-color-1: #F7EAE8;
-  --linear-gradient-color-2: #F0B9CA;
-  --linear-gradient-color-3: #EA96B6;
+  --hover-color: #ea96b6;
+  --visited-color: #0147c1;
+  --project-title-color: #0f000b;
+  --project-sidebar-background-color: #f7eae8;
+  --project-sidebar-text-color: #0f000b;
+  --heart-color: #ea96b6;
+  --holding-page-footer-color: #f7eae8;
+  --text-selection-background-color: #0f000b;
+  --linear-gradient-color-1: #f7eae8;
+  --linear-gradient-color-2: #f0b9ca;
+  --linear-gradient-color-3: #ea96b6;
   --stroke-shadow-color: #276418;
+  --project-nought-color: #94c734;
+  --project-troupe-color: red;
 }
 
 body {
@@ -413,10 +415,23 @@ a:active {
   height: auto;
   position: relative;
   /* Required to contain overlay size */
+  background: lime;
+  border-radius: 3rem;
+  padding: 3rem;
+}
+.work-page-image img {
+  border-radius: 3rem;
+}
+
+/* Project Colours */
+
+.project-nought {
+  background: var(--project-nought-color);
 }
 
 /* Overlay */
-.overlay {
+
+/* .overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -433,12 +448,12 @@ a:active {
   padding: 1em;
   background-color: var(--overlay-color);
   transition: opacity 0.3s, visibility 0.3s;
-}
+} */
 
-.work-page-grid-item:hover .overlay {
+/* .work-page-grid-item:hover .overlay {
   visibility: visible;
   opacity: 0.8;
-}
+} */
 
 /* 
 
@@ -725,9 +740,13 @@ a:active {
     padding: 4rem 8rem;
   }
 
+  .work-wrapper {
+    padding: 2rem;
+  }
+
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 2rem;
   }
 
   /* Grayscale filter with full-colour on hover and tap */
@@ -844,7 +863,7 @@ a:active {
   /* TODO: Add styles here for X-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   }
 }
 
@@ -854,6 +873,6 @@ a:active {
   /* TODO: Add styles here for XX-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
   }
 }
