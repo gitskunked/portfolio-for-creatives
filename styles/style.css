@@ -12,6 +12,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/open-sauce-one");
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /*
 
@@ -80,6 +81,7 @@ html {
   --body-typeface: "Open Sauce Two", "Figtree", sans-serif;
   --heading-typeface: "Open Sauce Two", "Figtree", sans-serif;
   --project-title-typeface: "Open Sauce Two", "Figtree", sans-serif;
+  --subheading-typeface: "Courier Prime", serif;
   --background-color: #f7eae8;
   --background-color-about: #f7eae8;
   --background-color-footer: #f7eae8;
@@ -152,27 +154,28 @@ svg {
 */
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.813rem;
   font-family: var(--heading-typeface);
   font-weight: 900;
-  margin-bottom: 1rem;
-  line-height: 1.2;
+  margin-bottom: 3rem;
+  line-height: 0.9;
   color: var(--h1-color);
 }
 
 h2 {
-  font-size: 2.25rem;
-  font-weight: 700;
+  font-size: 1.5rem;
   font-family: var(--heading-typeface);
-  margin-bottom: 1rem;
+  font-weight: 900;
+  margin-bottom: 0.25rem;
   color: var(--h2-color);
 }
 
 h3 {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.063rem;
+  font-weight: 200;
   font-style: italic;
-  margin-bottom: 1rem;
+  font-family: var(--subheading-typeface);
+  margin-bottom: 1.5rem;
   line-height: 1.3;
   color: var(--h3-color);
 }
@@ -213,10 +216,6 @@ em {
 
 .fineprint {
   font-size: 0.875rem;
-}
-
-.hero-headline {
-  color: var(--overlay-color);
 }
 
 .project-title {
@@ -358,10 +357,10 @@ a:active {
   display: flex;
   flex-direction: column;
   flex: 1;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   padding: 2rem 4rem;
-  text-align: center;
+  text-align: left;
 }
 
 .hero-icon {
@@ -415,12 +414,12 @@ a:active {
   height: auto;
   position: relative;
   /* Required to contain overlay size */
-  background: lime;
-  border-radius: 3rem;
+  background: red;
+  border-radius: 1rem;
   padding: 3rem;
 }
 .work-page-image img {
-  border-radius: 3rem;
+  border-radius: 1rem;
 }
 
 /* Project Colours */
@@ -716,15 +715,15 @@ a:active {
   }
 
   h1 {
-    font-size: 4.275rem;
+    font-size: 8.75rem;
   }
 
   h2 {
-    font-size: 2.25rem;
+    font-size: 3rem;
   }
 
   h3 {
-    font-size: 1.625rem;
+    font-size: 1.5rem;
   }
 
   .logo {
