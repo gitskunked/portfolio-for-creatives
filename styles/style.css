@@ -391,6 +391,11 @@ a:active {
   font-size: 4rem;
 }
 
+.call-to-action-button {
+  background: green;
+  width: 5rem;
+}
+
 /* Work Page Layout
 
 ██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
@@ -768,8 +773,9 @@ a:active {
   }
 
   .hero-headline-wrapper {
-    padding: 4rem 8rem;
+    padding: 4rem 6rem;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .call-to-action {
