@@ -53,7 +53,7 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("../assets/temp/up-cursor.png"), auto !important;
+  /*cursor: url("../assets/temp/up-cursor.png"), auto !important;*/
   /* TODO: Change the url above to add a custom cursor. Delete the line above if you want to use the default browser cursor. */
 }
 
@@ -82,39 +82,42 @@ html {
   --heading-typeface: "Open Sauce Two", "Figtree", sans-serif;
   --project-title-typeface: "Open Sauce Two", "Figtree", sans-serif;
   --subheading-typeface: "Courier Prime", serif;
-  --background-color: #f7eae8;
-  --background-color-about: #f7eae8;
-  --background-color-footer: #f7eae8;
-  --alt-background-color: #000000;
+  --background-color: #1d0e0b;
+  --background-color-about: #1d0e0b;
+  --background-color-footer: #1d0e0b;
+  --alt-background-color: #000;
   --background-color-holding-page: #1d0e0b;
-  --h1-color: #1d0e0b;
-  --h2-color: #1d0e0b;
-  --h3-color: #1d0e0b;
-  --h4-color: #1d0e0b;
-  --h5-color: #1d0e0b;
-  --h6-color: #1d0e0b;
-  --primary-text-color: #1d0e0b;
-  --holding-page-title-color: #f7eae8;
-  --accent-color: #0147c1;
-  --overlay-color: #276418;
-  --overlay-title-color: #000;
-  --overlay-description-color: #000;
-  --hyperlink-color: #276418;
-  --hyperlink-alternate-color: #276418;
-  --hover-color: #ea96b6;
-  --visited-color: #0147c1;
-  --project-title-color: #1d0e0b;
-  --project-sidebar-background-color: #f7eae8;
-  --project-sidebar-text-color: #1d0e0b;
-  --heart-color: #ea96b6;
-  --holding-page-footer-color: #f7eae8;
-  --text-selection-background-color: #1d0e0b;
   --linear-gradient-color-1: #f7eae8;
   --linear-gradient-color-2: #f0b9ca;
   --linear-gradient-color-3: #ea96b6;
-  --stroke-shadow-color: #276418;
-  --project-nought-color: #94c734;
-  --project-troupe-color: red;
+  --h1-color: #F5DED9;
+  --h2-color: #F5DED9;
+  --h3-color: #F5DED9;
+  --h4-color: #F5DED9;
+  --h5-color: #F5DED9;
+  --h6-color: #F5DED9;
+  --primary-text-color: #F5DED9;
+  --holding-page-title-color: #f7eae8;
+  --accent-color: #F34113;
+  --overlay-color: #0458C6;
+  --overlay-title-color: #000;
+  --overlay-description-color: #000;
+  --hyperlink-color: #F5DED9;
+  --hyperlink-alternate-color: #F34113;
+  --hover-color: #F34113;
+  --visited-color: #F5DED9;
+  --project-title-color: #1d0e0b;
+  --project-sidebar-background-color: #f7eae8;
+  --project-sidebar-text-color: #1d0e0b;
+  --heart-color: #FFA3C6;
+  --holding-page-footer-color: #f7eae8;
+  --text-selection-background-color: #1d0e0b;
+  --project-nought-color: #94C734;
+  --project-troupe-color: #FFA3C6;
+  --project-wag-and-wander-color: #F5DED9;
+  --project-bpm-color: #3B1D16;
+  --project-unclouded-color: #0458C6;
+  --project-yawpfest-color: #F34113;
 }
 
 body {
@@ -235,6 +238,18 @@ em {
   color: var(--overlay-description-color);
 }
 
+.graphic-designer {
+  color:#FFA3C6;
+}
+
+.type-enthusiast {
+  color:#94C734;
+}
+
+.problem-solver {
+  color:#0458C6;
+}
+
 /* Hyperlink Styles */
 
 a:link {
@@ -246,6 +261,7 @@ a:link {
   transition: 0.5s ease-in-out;
 }
 
+
 a:visited {
   color: var(--visited-color);
   transition: 0.5s ease-in-out;
@@ -254,7 +270,6 @@ a:visited {
 a:hover {
   color: var(--hover-color);
   transition: 0.5s ease-in-out;
-  text-decoration: underline;
 }
 
 a:focus {
@@ -264,8 +279,6 @@ a:focus {
 
 a:active {
   color: var(--hover-color);
-  text-decoration: underline;
-  /* Tap on mobile */
 }
 
 .navigation-arrow {
@@ -426,6 +439,25 @@ a:active {
 
 .project-nought {
   background: var(--project-nought-color);
+}
+
+.project-nought-text {
+  color: #3B1D16;
+}
+
+.project-nought-category {
+  background: #3B1D16;
+  max-width: fit-content;
+  border-radius: 10rem;
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  color: var(--project-nought-color)
 }
 
 /* Overlay */
@@ -715,7 +747,7 @@ a:active {
   }
 
   h1 {
-    font-size: 8.75rem;
+    font-size: 7.5rem;
   }
 
   h2 {
