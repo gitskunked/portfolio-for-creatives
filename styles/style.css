@@ -157,10 +157,10 @@ svg {
 */
 
 h1 {
-  font-size: 2.813rem;
+  font-size: 10vw;
   font-family: var(--heading-typeface);
   font-weight: 900;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   line-height: 0.9;
   color: var(--h1-color);
 }
@@ -248,6 +248,17 @@ em {
 
 .problem-solver {
   color:#0458C6;
+}
+
+.line-break {
+  display: block;
+}
+
+.call-to-action-text {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: right;
 }
 
 /* Hyperlink Styles */
@@ -380,20 +391,6 @@ a:active {
   font-size: 4rem;
 }
 
-.hero-footer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.hero-footer-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem;
-}
-
 /* Work Page Layout
 
 ██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
@@ -437,6 +434,11 @@ a:active {
 
 /* Project Colours */
 
+.project-categories-list {
+  display: flex;
+  flex-direction: row;
+}
+
 .project-nought {
   background: var(--project-nought-color);
 }
@@ -449,11 +451,9 @@ a:active {
   background: #3B1D16;
   max-width: fit-content;
   border-radius: 10rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1.75rem;
   margin-top: 1.5rem;
-  flex: 1;
-  display: flex;
-  flex-direction: row;
+  margin-right: 1rem;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 0.15rem;
@@ -747,7 +747,7 @@ a:active {
   }
 
   h1 {
-    font-size: 7.5rem;
+    font-size: 7vw;
   }
 
   h2 {
@@ -769,6 +769,11 @@ a:active {
 
   .hero-headline-wrapper {
     padding: 4rem 8rem;
+    flex-direction: row;
+  }
+
+  .call-to-action {
+    align-self: flex-end;
   }
 
   .work-wrapper {
