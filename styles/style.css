@@ -85,7 +85,7 @@ html {
   --background-color: #1d0e0b;
   --background-color-about: #1d0e0b;
   --background-color-footer: #1d0e0b;
-  --alt-background-color: #000;
+  --alt-background-color: #0458c6;
   --background-color-holding-page: #1d0e0b;
   --h1-color: #f5ded9;
   --h2-color: #f5ded9;
@@ -95,7 +95,7 @@ html {
   --h6-color: #f5ded9;
   --primary-text-color: #f5ded9;
   --holding-page-title-color: #f5ded9;
-  --accent-color: #f34113;
+  --accent-color: #673428;
   --overlay-color: #0458c6;
   --overlay-title-color: #000;
   --overlay-description-color: #000;
@@ -106,7 +106,6 @@ html {
   --project-title-color: #1d0e0b;
   --project-sidebar-background-color: #f5ded9;
   --project-sidebar-text-color: #1d0e0b;
-  --heart-color: #ffa3c6;
   --holding-page-footer-color: #f5ded9;
   --text-selection-background-color: #1d0e0b;
   --project-nought-color: #94c734;
@@ -281,7 +280,7 @@ a:hover {
 }
 
 a:focus {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--hover-color);
   transition: 0.5s ease-in-out;
 }
 
@@ -310,15 +309,12 @@ a:active {
   color: var(--hyperlink-alternate-color);
 }
 
-.custom-navigation:hover {
-  background: url(assets/temp/heading-background.svg);
-  background-size: 15%;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.heart {
-  color: var(--heart-color);
+a.custom-navigation {
+  margin-right: 1.5rem;
+  font-family: var(--subheading-typeface);
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-style: italic;
 }
 
 .footer-nav-item {
@@ -365,7 +361,7 @@ a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 2.5rem 6rem 0rem;
   align-items: flex-start;
 }
 
@@ -380,7 +376,7 @@ a:active {
   flex: 1;
   align-items: left;
   justify-content: left;
-  padding: 2rem 4rem;
+  padding: 0rem 4rem;
   text-align: left;
 }
 
@@ -391,7 +387,9 @@ a:active {
 .call-to-action-button {
   margin: 1.75rem 0;
   width: 5rem;
+  justify-self: end;
 }
+
 
 /* Work Page Layout
 
@@ -813,35 +811,11 @@ a:active {
 /* The best 404 pages have become an art in themselves. Your 404 error page is an opportunity to make a memorable impression on your visitors when they don’t land exactly where they hoped. */
 
 /*
-
-██████  ██       █████  ██    ██ 
-██   ██ ██      ██   ██  ██  ██  
-██████  ██      ███████   ████   
-██      ██      ██   ██    ██    
-██      ███████ ██   ██    ██    
-*/
-
-.play-page {
-  display: grid;
-  place-items: center;
-}
-
-.play-page-inner-container {
-  text-align: center;
-}
-
-.play-page-title {
-  color: var(--accent-color);
-}
-
-/*
-
 ███    ███ ███████ ██████  ██  █████       ██████  ██    ██ ███████ ██████  ██ ███████ ███████ 
 ████  ████ ██      ██   ██ ██ ██   ██     ██    ██ ██    ██ ██      ██   ██ ██ ██      ██      
 ██ ████ ██ █████   ██   ██ ██ ███████     ██    ██ ██    ██ █████   ██████  ██ █████   ███████ 
 ██  ██  ██ ██      ██   ██ ██ ██   ██     ██ ▄▄ ██ ██    ██ ██      ██   ██ ██ ██           ██ 
 ██      ██ ███████ ██████  ██ ██   ██      ██████   ██████  ███████ ██   ██ ██ ███████ ███████ 
-
 */
 
 /* Medium devices (tablets, 768px and up) */
@@ -884,10 +858,17 @@ a:active {
     padding: 4rem 6rem;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
+  }
+
+  .hero-main-text {
+    flex-grow: 1; /* This will make the main text area take up available space */
   }
 
   .call-to-action {
     align-self: flex-end;
+    margin-left: auto; /* Pushes the .call-to-action to the right */
   }
 
   .work-wrapper {
