@@ -96,9 +96,6 @@ html {
   --primary-text-color: #f5ded9;
   --holding-page-title-color: #f5ded9;
   --accent-color: #673428;
-  --overlay-color: #0458c6;
-  --overlay-title-color: #000;
-  --overlay-description-color: #000;
   --hyperlink-color: #f5ded9;
   --hyperlink-alternate-color: #f34113;
   --hover-color: #f34113;
@@ -114,6 +111,9 @@ html {
   --project-bpm-color: #3b1d16;
   --project-unclouded-color: #0458c6;
   --project-yawpfest-color: #f34113;
+  /* --overlay-color: #0458c6;
+  --overlay-title-color: #000;
+  --overlay-description-color: #000; */
 }
 
 body {
@@ -204,7 +204,7 @@ h6 {
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 1rem;
 }
@@ -213,25 +213,11 @@ em {
   font-style: italic;
 }
 
-.fineprint {
-  font-size: 0.875rem;
-}
-
 .project-title {
   font-size: 3.725rem;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
   margin-bottom: 2rem;
-}
-
-.overlay-title {
-  font-size: 2.5rem;
-  text-align: center;
-  color: var(--overlay-title-color);
-}
-
-.overlay-description {
-  color: var(--overlay-description-color);
 }
 
 .graphic-designer {
@@ -258,11 +244,21 @@ em {
   margin-bottom: -0.25rem;
 }
 
+/* .overlay-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--overlay-title-color);
+}
+
+.overlay-description {
+  color: var(--overlay-description-color);
+} */
+
 /* Hyperlink Styles */
 
 a:link {
   color: var(--hyperlink-color);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
   text-decoration: none;
@@ -312,7 +308,7 @@ a:active {
 a.custom-navigation {
   margin-right: 1.5rem;
   font-family: var(--subheading-typeface);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 200;
   font-style: italic;
 }
@@ -389,7 +385,6 @@ a.custom-navigation {
   width: 5rem;
   justify-self: end;
 }
-
 
 /* Work Page Layout
 
@@ -647,36 +642,61 @@ a.custom-navigation {
 */
 
 .global-footer {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3rem;
-  min-height: 100vh;
   background: var(--background-color-footer);
   padding: 1rem;
 }
 
-.footer-item-1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
 }
 
-.footer-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+.divider {
+  border-top: 2px solid #94c734;
+  margin: 2rem 0 1.25rem;
 }
 
-.footer-item-3 {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
 }
 
-.footer-item-4 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
+.footer-icon {
+  width: 2.5rem;
+  height: auto;
 }
 
-.awards-list {
-  margin-bottom: 2rem;
+.footer-call-to-action {
+  color: #ffa3c6;
+}
+
+.contact-line {
+  display: flex;
+  margin-bottom: -0.5rem;
+  font-size: 1rem;
+}
+
+.footer-text {
+  font-size: 1rem;
+}
+
+.footer-text-bold {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #f34113;
+  margin-right: 0.5rem;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.copyright {
+  font-size: 0.875rem;
+  opacity: 80%;
+  margin: 0.5rem 0;
 }
 
 /* Project Page 
@@ -753,49 +773,6 @@ a.custom-navigation {
 .project-details {
   width: 100%;
   padding: 1rem;
-}
-
-/* 
-
-██   ██  ██████  ██      ██████  ██ ███    ██  ██████  
-██   ██ ██    ██ ██      ██   ██ ██ ████   ██ ██       
-███████ ██    ██ ██      ██   ██ ██ ██ ██  ██ ██   ███ 
-██   ██ ██    ██ ██      ██   ██ ██ ██  ██ ██ ██    ██ 
-██   ██  ██████  ███████ ██████  ██ ██   ████  ██████  
-                                                       
-*/
-
-.holding-page-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto;
-  place-items: center;
-  text-align: center;
-  width: 100%;
-  min-height: 100vh;
-  /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: var(--background-color-holding-page);
-}
-
-.holding-page-animation {
-  margin-bottom: 3rem;
-}
-
-.holding-page-title {
-  color: var(--holding-page-title-color);
-}
-
-.holding-page-footer {
-  display: grid;
-  place-items: center;
-  min-height: 10vh;
-  width: 100%;
-}
-
-.holding-page-copyright {
-  font-size: 0.8rem;
-  color: var(--holding-page-footer-color);
-  margin-bottom: 0;
 }
 
 /*
@@ -896,11 +873,14 @@ a.custom-navigation {
   }
 
   .global-footer {
-    padding: 4rem 4rem 0 4rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    padding: 4rem 6rem;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
   }
 
-  .about-item-1 {
+  /* .about-item-1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
@@ -942,7 +922,7 @@ a.custom-navigation {
     grid-column: 1 / 4;
     text-align: center;
     align-self: end;
-  }
+  } */
 
   /* Padding around work grid and project page */
   .portfolio,
