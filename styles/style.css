@@ -28,10 +28,6 @@ Imported stylesheets. Remove the ones you do not want to use.
 
 /* TODO: Delete any stylesheets that you do not want to use. */
 
-@import url("animated-gradient.css");
-@import url("text-stroke.css");
-@import url("stroke-shadow.css");
-@import url("experiments.css");
 @import url("style-guide.css");
 @import url("scroll-to-top.css");
 
@@ -83,6 +79,7 @@ html {
   --project-title-typeface: "Open Sauce Two", "Figtree", sans-serif;
   --subheading-typeface: "Courier Prime", serif;
   --background-color: #1d0e0b;
+  --background-color-header: #1d0e0b;
   --background-color-about: #1d0e0b;
   --background-color-footer: #1d0e0b;
   --alt-background-color: #0458c6;
@@ -140,6 +137,15 @@ svg {
   /* Removes the gap/space in inline elements for text descenders. */
   object-fit: cover;
   /* This is optional. Also try cover or leave out entirely. */
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--background-color-header);
+  padding: 2rem;
+  z-index: 1000; /* Keeps it above other elements */
 }
 
 /* Global & Mobile Typography 
@@ -311,6 +317,7 @@ a.custom-navigation {
   font-size: 1.25rem;
   font-weight: 200;
   font-style: italic;
+  line-height: 0;
 }
 
 .footer-nav-item {
@@ -357,8 +364,12 @@ a.custom-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2.5rem 6rem 0rem;
+  padding: 0 4rem 0;
   align-items: flex-start;
+}
+
+.navigation-padding {
+  padding: 0.875rem 0;
 }
 
 .logo {
@@ -372,7 +383,8 @@ a.custom-navigation {
   flex: 1;
   align-items: left;
   justify-content: left;
-  padding: 0rem 4rem;
+  margin-top: 6rem;
+  padding: 2rem 4rem;
   text-align: left;
 }
 
@@ -652,22 +664,6 @@ a.custom-navigation {
   align-items: left;
 }
 
-.divider {
-  border-top: 2px solid #94c734;
-  margin: 2rem 0 1.25rem;
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: left;
-}
-
-.footer-icon {
-  width: 2.5rem;
-  height: auto;
-}
-
 .footer-call-to-action {
   color: #ffa3c6;
 }
@@ -691,6 +687,24 @@ a.custom-navigation {
 
 .footer-links {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.divider {
+  border-top: 2px solid #94c734;
+  margin: 2rem 0 1.25rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-icon {
+  width: 2.5rem;
+  height: auto;
 }
 
 .copyright {
@@ -832,7 +846,7 @@ a.custom-navigation {
   }
 
   .hero-headline-wrapper {
-    padding: 4rem 6rem;
+    padding: 3rem 6rem;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
