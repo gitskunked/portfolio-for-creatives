@@ -136,7 +136,6 @@ svg {
   vertical-align: top;
   /* Removes the gap/space in inline elements for text descenders. */
   object-fit: cover;
-  /* This is optional. Also try cover or leave out entirely. */
 }
 
 .header {
@@ -448,6 +447,7 @@ a.custom-navigation {
 
 .project-nought {
   background: var(--project-nought-color);
+  transition: 0.5s ease-in-out;
 }
 
 .project-nought-text {
@@ -468,8 +468,25 @@ a.custom-navigation {
   color: var(--project-nought-color);
 }
 
+.project-nought:hover {
+  background: #3b1d16;
+  transition: 0.5s ease-in-out;
+}
+
+.project-nought:hover .project-nought-text {
+  color: var(--project-nought-color);
+  transition: 1s ease-in-out;
+}
+
+.project-nought:hover .project-nought-category {
+  background: var(--project-nought-color);
+  color: #3b1d16;
+  transition: 1s ease-in-out;
+}
+
 .project-troupe {
   background: var(--project-troupe-color);
+  transition: 0.5s ease-in-out;
 }
 
 .project-troupe-text {
@@ -490,8 +507,25 @@ a.custom-navigation {
   color: var(--project-troupe-color);
 }
 
+.project-troupe:hover {
+  background: #0458c6;
+  transition: 0.5s ease-in-out;
+}
+
+.project-troupe:hover .project-troupe-text {
+  color: var(--project-troupe-color);
+  transition: 1s ease-in-out;
+}
+
+.project-troupe:hover .project-troupe-category {
+  background: var(--project-troupe-color);
+  color: #0458c6;
+  transition: 1s ease-in-out;
+}
+
 .project-wag-and-wander {
   background: var(--project-wag-and-wander-color);
+  transition: 0.5s ease-in-out;
 }
 
 .project-wag-and-wander-text {
@@ -512,8 +546,25 @@ a.custom-navigation {
   color: var(--project-wag-and-wander-color);
 }
 
+.project-wag-and-wander:hover {
+  background: #f34113;
+  transition: 0.5s ease-in-out;
+}
+
+.project-wag-and-wander:hover .project-wag-and-wander-text {
+  color: var(--project-wag-and-wander-color);
+  transition: 1s ease-in-out;
+}
+
+.project-wag-and-wander:hover .project-wag-and-wander-category {
+  background: var(--project-wag-and-wander-color);
+  color: #f34113;
+  transition: 1s ease-in-out;
+}
+
 .project-bpm {
   background: var(--project-bpm-color);
+  transition: 0.5s ease-in-out;
 }
 
 .project-bpm-text {
@@ -534,8 +585,25 @@ a.custom-navigation {
   color: var(--project-bpm-color);
 }
 
+.project-bpm:hover {
+  background: #94c734;
+  transition: 0.5s ease-in-out;
+}
+
+.project-bpm:hover .project-bpm-text {
+  color: var(--project-bpm-color);
+  transition: 1s ease-in-out;
+}
+
+.project-bpm:hover .project-bpm-category {
+  background: var(--project-bpm-color);
+  color: #94c734;
+  transition: 1s ease-in-out;
+}
+
 .project-unclouded {
   background: var(--project-unclouded-color);
+  transition: 0.5s ease-in-out;
 }
 
 .project-unclouded-text {
@@ -556,8 +624,25 @@ a.custom-navigation {
   color: var(--project-unclouded-color);
 }
 
+.project-unclouded:hover {
+  background: #ffa3c6;
+  transition: 0.5s ease-in-out;
+}
+
+.project-unclouded:hover .project-unclouded-text {
+  color: var(--project-unclouded-color);
+  transition: 1s ease-in-out;
+}
+
+.project-unclouded:hover .project-unclouded-category {
+  background: var(--project-unclouded-color);
+  color: #ffa3c6;
+  transition: 1s ease-in-out;
+}
+
 .project-yawpfest {
   background: var(--project-yawpfest-color);
+  transition: 0.5s ease-in-out;
 }
 
 .project-yawpfest-text {
@@ -576,6 +661,22 @@ a.custom-navigation {
   letter-spacing: 0.1rem;
   background: #f5ded9;
   color: var(--project-yawpfest-color);
+}
+
+.project-yawpfest:hover {
+  background: #f5ded9;
+  transition: 0.5s ease-in-out;
+}
+
+.project-yawpfest:hover .project-yawpfest-text {
+  color: var(--project-yawpfest-color);
+  transition: 1s ease-in-out;
+}
+
+.project-yawpfest:hover .project-yawpfest-category {
+  background: var(--project-yawpfest-color);
+  color: #f5ded9;
+  transition: 1s ease-in-out;
 }
 
 /* Overlay */
@@ -619,8 +720,14 @@ a.custom-navigation {
   grid-template-columns: 1fr;
   grid-gap: 3rem;
   background: var(--background-color-about);
+  margin-top: 4rem;
   padding: 1rem;
   flex: 1;
+}
+
+.about-image {
+  border-radius: 1rem;
+  height: 80vh;
 }
 
 .about-item-1 {
