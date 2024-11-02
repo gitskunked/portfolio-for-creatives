@@ -79,7 +79,7 @@ html {
   --project-title-typeface: "Open Sauce Two", "Figtree", sans-serif;
   --subheading-typeface: "Courier Prime", serif;
   --background-color: #1d0e0b;
-  --background-color-header: #1d0e0b;
+  --background-color-header: #0458c6;
   --background-color-about: #1d0e0b;
   --background-color-footer: #1d0e0b;
   --alt-background-color: #0458c6;
@@ -143,7 +143,7 @@ svg {
   width: 100%;
   top: 0;
   background-color: var(--background-color-header);
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   z-index: 1000; /* Keeps it above other elements */
 }
 
@@ -158,7 +158,7 @@ svg {
 */
 
 h1 {
-  font-size: 10vw;
+  font-size: 13vw;
   font-family: var(--heading-typeface);
   font-weight: 900;
   margin-bottom: 2rem;
@@ -167,7 +167,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-family: var(--heading-typeface);
   font-weight: 900;
   margin-bottom: 0.25rem;
@@ -175,7 +175,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.063rem;
+  font-size: 1.25rem;
   font-weight: 200;
   font-style: italic;
   font-family: var(--subheading-typeface);
@@ -210,7 +210,7 @@ h6 {
 
 p {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 2;
   margin-bottom: 1rem;
 }
 
@@ -241,14 +241,6 @@ em {
   display: block;
 }
 
-.call-to-action-text {
-  font-family: var(--subheading-typeface);
-  font-size: 1.5rem;
-  font-style: italic;
-  text-align: right;
-  margin-bottom: -0.25rem;
-}
-
 /* .overlay-title {
   font-size: 2.5rem;
   text-align: center;
@@ -265,7 +257,6 @@ a:link {
   color: var(--hyperlink-color);
   font-size: 1rem;
   font-weight: 600;
-  line-height: 1.5;
   text-decoration: none;
   transition: 0.5s ease-in-out;
 }
@@ -277,11 +268,6 @@ a:visited {
 
 a:hover {
   color: var(--hover-color);
-  transition: 0.5s ease-in-out;
-}
-
-a:focus {
-  outline: 1px solid var(--hover-color);
   transition: 0.5s ease-in-out;
 }
 
@@ -312,11 +298,17 @@ a:active {
 
 a.custom-navigation {
   margin-right: 1.5rem;
+  flex-direction: column;
   font-family: var(--subheading-typeface);
   font-size: 1.25rem;
   font-weight: 200;
   font-style: italic;
   line-height: 0;
+}
+
+a.custom-navigation:hover {
+  color: #ffa3c6;
+  font-weight: 700;
 }
 
 .footer-nav-item {
@@ -363,16 +355,15 @@ a.custom-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 4rem 0;
   align-items: flex-start;
 }
 
 .navigation-padding {
-  padding: 0.875rem 0;
+  padding: 1rem 0;
 }
 
 .logo {
-  width: 3rem;
+  width: 30vh;
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
@@ -381,9 +372,11 @@ a.custom-navigation {
   flex-direction: column;
   flex: 1;
   align-items: left;
-  justify-content: left;
-  margin-top: 6rem;
-  padding: 2rem 4rem;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+  margin-top: 8rem;
+  padding: 2rem;
   text-align: left;
 }
 
@@ -391,9 +384,21 @@ a.custom-navigation {
   font-size: 4rem;
 }
 
+.call-to-action {
+  margin-top: 6rem;
+}
+
+.call-to-action-text {
+  font-family: var(--subheading-typeface);
+  font-size: 1.25rem;
+  font-style: italic;
+  text-align: right;
+  line-height: 0.75rem;
+}
+
 .call-to-action-button {
-  margin: 1.75rem 0;
-  width: 5rem;
+  margin: 2.5rem 0 1.75rem;
+  width: 4rem;
   justify-self: end;
 }
 
@@ -420,7 +425,7 @@ a.custom-navigation {
 /* Defining the work page grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   grid-gap: 1rem;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
@@ -718,36 +723,41 @@ a.custom-navigation {
 .about {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 3rem;
+  grid-gap: 5rem;
   background: var(--background-color-about);
-  margin-top: 4rem;
-  padding: 1rem;
+  margin-top: 6rem;
+  padding: 3rem;
   flex: 1;
 }
 
 .about-image {
   border-radius: 1rem;
-  height: 80vh;
+  flex-grow: 2;
 }
 
 .about-item-1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  padding: 2rem 0;
 }
 
 .about-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  grid-column: 2 / 2;
+  grid-row: 1 / 2;
+  padding-left: 5rem;
+  border-left: 2px solid #0458c6;
 }
 
-.about-item-3 {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
+.about-headline {
+  color: #94c734;
+  font-size: 4rem;
+  padding-top: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 100%;
 }
 
-.about-item-4 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
+.about-bio {
+  max-width: 100%;
 }
 
 /* Global Footer
@@ -762,40 +772,63 @@ a.custom-navigation {
 
 .global-footer {
   background: var(--background-color-footer);
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .footer-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: left;
 }
 
+.footer-headline {
+  font-size: 4rem;
+  margin-bottom: 1.25rem;
+}
+
 .footer-call-to-action {
   color: #ffa3c6;
+  margin-bottom: 2.5rem;
 }
 
 .contact-line {
   display: flex;
-  margin-bottom: -0.5rem;
-  font-size: 1rem;
 }
 
 .footer-text {
   font-size: 1rem;
+  line-height: 1;
 }
 
 .footer-text-bold {
   font-size: 1rem;
+  line-height: 1;
   font-weight: 900;
   color: #f34113;
   margin-right: 0.5rem;
 }
 
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer-links {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+}
+
+.footer-link {
+  line-height: 1;
+  text-align: right;
+  margin-bottom: 1rem;
 }
 
 .divider {
@@ -920,6 +953,15 @@ a.custom-navigation {
 
 @media (min-width: 768px) {
   /* TODO: Add styles here for medium devices. */
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    grid-gap: 2rem;
+  }
+  
+  .call-to-action-button {
+    width: 4.5rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -932,19 +974,50 @@ a.custom-navigation {
   }
 
   h1 {
-    font-size: 7vw;
-  }
-
-  h2 {
-    font-size: 3rem;
+    font-size: 8.5vw;
   }
 
   h3 {
     font-size: 1.5rem;
   }
 
+  .call-to-action-text {
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+
+  .header {
+    padding: 2rem 4rem;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-wide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 40vw;
+  }
+
+  .footer-headline {
+    font-size: 6vw;
+  }
+
+  .about-headline {
+    font-size: 6vw;
+    max-width: 35vw;
+  }
+
+  .about-bio {
+    max-width: 32vw;
+  }
+
   .logo {
-    width: 20rem;
+    width: 35vh;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
 
@@ -953,7 +1026,7 @@ a.custom-navigation {
   }
 
   .hero-headline-wrapper {
-    padding: 3rem 6rem;
+    padding: 4rem;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
@@ -969,12 +1042,16 @@ a.custom-navigation {
     margin-left: auto; /* Pushes the .call-to-action to the right */
   }
 
+  .call-to-action-button {
+    width: 5rem;
+  }
+
   .work-wrapper {
-    padding: 2rem;
+    padding: 2rem 4rem;
   }
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
     grid-gap: 2rem;
   }
 
@@ -990,60 +1067,16 @@ a.custom-navigation {
 
   .about {
     padding: 4rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
 
   .global-footer {
-    padding: 4rem 6rem;
+    padding: 4rem;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box; /* Ensures padding doesn't overflow */
   }
-
-  /* .about-item-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  .footer-item-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-
-  .about-item-2 {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-
-  .footer-item-2 {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-
-  .about-item-3 {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-  }
-
-  .footer-item-3 {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-  }
-
-  .about-item-4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    text-align: center;
-    align-self: end;
-  }
-
-  .footer-item-4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    text-align: center;
-    align-self: end;
-  } */
 
   /* Padding around work grid and project page */
   .portfolio,
@@ -1095,7 +1128,7 @@ a.custom-navigation {
   /* TODO: Add styles here for X-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
   }
 }
 
@@ -1105,6 +1138,6 @@ a.custom-navigation {
   /* TODO: Add styles here for XX-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
   }
 }
