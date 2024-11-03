@@ -308,6 +308,7 @@ a.custom-navigation {
 
 a.custom-navigation:hover {
   color: #ffa3c6;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
