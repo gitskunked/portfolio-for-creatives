@@ -94,7 +94,7 @@ html {
   --holding-page-title-color: #f5ded9;
   --accent-color: #673428;
   --hyperlink-color: #f5ded9;
-  --hyperlink-alternate-color: #f34113;
+  --hyperlink-alternate-color: #94c734;
   --hover-color: #f34113;
   --visited-color: #f5ded9;
   --project-title-color: #1d0e0b;
@@ -170,12 +170,12 @@ h2 {
   font-size: 2.5rem;
   font-family: var(--heading-typeface);
   font-weight: 900;
-  margin-bottom: 0.25rem;
+  margin-bottom: 1rem;
   color: var(--h2-color);
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 200;
   font-style: italic;
   font-family: var(--subheading-typeface);
@@ -292,24 +292,42 @@ a:active {
   -webkit-text-stroke-color: var(--accent-color);
 }
 
-.colored-link {
+a.colored-link {
   color: var(--hyperlink-alternate-color);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+a.colored-link:visited {
+  color: var(--hyperlink-alternate-color);
+}
+
+a.colored-link:hover {
+  color: var(--hover-color);
+}
+
+a.colored-link:active {
+  color: var(--hover-color);
 }
 
 a.custom-navigation {
   margin-right: 1.5rem;
   flex-direction: column;
   font-family: var(--subheading-typeface);
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 200;
   font-style: italic;
   line-height: 0;
+  transition: 0.5s ease-in-out;
 }
 
 a.custom-navigation:hover {
   color: #ffa3c6;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 700;
+  transition: 0.25s ease-in-out;
 }
 
 .footer-nav-item {
@@ -322,12 +340,6 @@ a.custom-navigation:hover {
 
 .social-item {
   line-height: 1.3;
-}
-
-.list-item {
-  line-height: 1.3;
-  list-style-type: disc;
-  margin-left: 1.2rem;
 }
 
 .project-description {
@@ -375,9 +387,9 @@ a.custom-navigation:hover {
   align-items: left;
   justify-content: space-between;
   width: 100%;
-  box-sizing: border-box; /* Ensures padding doesn't overflow */
+  box-sizing: border-box;
   margin-top: 8rem;
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   text-align: left;
 }
 
@@ -386,15 +398,15 @@ a.custom-navigation:hover {
 }
 
 .call-to-action {
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 
 .call-to-action-text {
   font-family: var(--subheading-typeface);
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-style: italic;
   text-align: right;
-  line-height: 0.75rem;
+  line-height: 0.85rem;
 }
 
 .call-to-action-button {
@@ -420,7 +432,7 @@ a.custom-navigation:hover {
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
-  padding: 0.25rem;
+  padding: 2rem 2rem 0;
 }
 
 /* Defining the work page grid */
@@ -442,6 +454,7 @@ a.custom-navigation:hover {
 }
 .work-page-image img {
   border-radius: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 /* Project Colours */
@@ -449,6 +462,7 @@ a.custom-navigation:hover {
 .project-categories-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .project-nought {
@@ -464,8 +478,7 @@ a.custom-navigation:hover {
   max-width: fit-content;
   border-radius: 10rem;
   padding: 0.75rem 1.5rem;
-  margin-top: 1.5rem;
-  margin-right: 0.75rem;
+  margin: 1rem 0.75rem 0 0;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 700;
@@ -503,8 +516,7 @@ a.custom-navigation:hover {
   max-width: fit-content;
   border-radius: 10rem;
   padding: 0.75rem 1.5rem;
-  margin-top: 1.5rem;
-  margin-right: 0.75rem;
+  margin: 1rem 0.75rem 0 0;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 700;
@@ -542,8 +554,7 @@ a.custom-navigation:hover {
   max-width: fit-content;
   border-radius: 10rem;
   padding: 0.75rem 1.5rem;
-  margin-top: 1.5rem;
-  margin-right: 0.75rem;
+  margin: 1rem 0.75rem 0 0;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 700;
@@ -581,8 +592,7 @@ a.custom-navigation:hover {
   max-width: fit-content;
   border-radius: 10rem;
   padding: 0.75rem 1.5rem;
-  margin-top: 1.5rem;
-  margin-right: 0.75rem;
+  margin: 1rem 0.75rem 0 0;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 700;
@@ -620,8 +630,7 @@ a.custom-navigation:hover {
   max-width: fit-content;
   border-radius: 10rem;
   padding: 0.75rem 1.5rem;
-  margin-top: 1.5rem;
-  margin-right: 0.75rem;
+  margin: 1rem 0.75rem 0 0;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 700;
@@ -659,8 +668,7 @@ a.custom-navigation:hover {
   max-width: fit-content;
   border-radius: 10rem;
   padding: 0.75rem 1.5rem;
-  margin-top: 1.5rem;
-  margin-right: 0.75rem;
+  margin: 1rem 0.75rem 0 0;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 700;
@@ -724,11 +732,10 @@ a.custom-navigation:hover {
 .about {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 5rem;
+  grid-gap: 2rem;
   background: var(--background-color-about);
   margin-top: 6rem;
-  padding: 3rem;
-  flex: 1;
+  padding: 2rem;
 }
 
 .about-image {
@@ -736,29 +743,58 @@ a.custom-navigation:hover {
   flex-grow: 2;
 }
 
-.about-item-1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  padding: 2rem 0;
-}
-
+.about-item-1,
 .about-item-2 {
-  grid-column: 2 / 2;
-  grid-row: 1 / 2;
-  padding-left: 5rem;
-  border-left: 2px solid #0458c6;
+  padding: 2rem 0 0 0;
 }
 
 .about-headline {
   color: #94c734;
-  font-size: 4rem;
-  padding-top: 1.25rem;
+  font-size: 12vw;
   margin-bottom: 2rem;
-  max-width: 100%;
+  max-width: 80vw;
 }
 
 .about-bio {
-  max-width: 100%;
+  max-width: 80vw;
+}
+
+.about-contact-1 {
+  color: #94c734;
+  margin: 2.25rem 0 0.25rem;
+}
+
+.about-contact-2 {
+  margin-bottom: 1rem;
+}
+
+.about-subheading-1 {
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+.about-list {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-left: 0.5rem;
+}
+
+.about-list li {
+  text-indent: 0.25rem;
+  line-height: 2.25;
+}
+
+.about-subheading-2 {
+  margin-bottom: 0.75rem;
+}
+
+.about-description-1 {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.about-description-2 {
+  margin-bottom: 2rem;
+  opacity: 80%;
 }
 
 /* Global Footer
@@ -784,7 +820,7 @@ a.custom-navigation:hover {
 }
 
 .footer-headline {
-  font-size: 4rem;
+  font-size: 12vw;
   margin-bottom: 1.25rem;
 }
 
@@ -959,9 +995,34 @@ a.custom-navigation:hover {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     grid-gap: 2rem;
   }
-  
+
   .call-to-action-button {
     width: 4.5rem;
+  }
+
+  .header {
+    padding: 1.75rem 3rem;
+  }
+
+  .global-footer {
+    padding: 3rem;
+  }
+
+  .hero-headline-wrapper {
+    padding: 3rem 3rem 0 3rem;
+  }
+
+  .portfolio,
+  .project-wrapper {
+    padding: 3rem 3rem 0;
+  }
+
+  .about {
+    padding: 3rem;
+  }
+
+  .about-bio {
+    max-width: 70vw;
   }
 }
 
@@ -1008,13 +1069,28 @@ a.custom-navigation:hover {
     font-size: 6vw;
   }
 
+  .about {
+    grid-template-columns: 1fr 2fr;
+    padding: 4rem;
+  }
+
+  .about-item-1 {
+    grid-column: 1 / 2;
+    padding: 2rem 0;
+  }
+
+  .about-item-2 {
+    grid-column: 2 / 3;
+    padding: 2rem 0 2rem 2rem;
+    border-left: 2px solid #ffa3c6;
+  }
+
   .about-headline {
     font-size: 6vw;
-    max-width: 35vw;
   }
 
   .about-bio {
-    max-width: 32vw;
+    max-width: 50vw;
   }
 
   .logo {
@@ -1027,11 +1103,10 @@ a.custom-navigation:hover {
   }
 
   .hero-headline-wrapper {
-    padding: 4rem;
+    padding: 4rem 4rem 0 4rem;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    box-sizing: border-box; /* Ensures padding doesn't overflow */
   }
 
   .hero-main-text {
@@ -1066,11 +1141,6 @@ a.custom-navigation:hover {
     filter: grayscale(0);
   }
 
-  .about {
-    padding: 4rem;
-    grid-template-columns: 1fr 2fr;
-  }
-
   .global-footer {
     padding: 4rem;
     flex-direction: row;
@@ -1082,7 +1152,7 @@ a.custom-navigation:hover {
   /* Padding around work grid and project page */
   .portfolio,
   .project-wrapper {
-    padding: 0.5rem;
+    padding: 4rem 0 0;
   }
 
   /* Project Page Flex Direction on Large Devices */
@@ -1131,6 +1201,18 @@ a.custom-navigation:hover {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
   }
+
+  .about {
+    grid-gap: 4rem;
+  }
+
+  .about-item-2 {
+    padding: 2rem 0 2rem 4rem;
+  }
+
+  .about-bio {
+    max-width: 40vw;
+  }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -1140,5 +1222,15 @@ a.custom-navigation:hover {
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+  }
+}
+
+/* XXX-Large devices (larger desktops, 1700px and up) */
+
+@media (min-width: 1700px) {
+  /* TODO: Add styles here for XXX-large devices. */
+
+  .about-bio {
+    max-width: 32vw;
   }
 }
