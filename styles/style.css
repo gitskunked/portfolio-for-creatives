@@ -28,9 +28,6 @@ Imported stylesheets. Remove the ones you do not want to use.
 
 /* TODO: Delete any stylesheets that you do not want to use. */
 
-@import url("style-guide.css");
-@import url("scroll-to-top.css");
-
 /*
 
 X-Small devices (portrait phones, less than 576px) 
@@ -91,7 +88,6 @@ html {
   --h5-color: #f5ded9;
   --h6-color: #f5ded9;
   --primary-text-color: #f5ded9;
-  --holding-page-title-color: #f5ded9;
   --accent-color: #673428;
   --hyperlink-color: #f5ded9;
   --hyperlink-alternate-color: #94c734;
@@ -100,7 +96,6 @@ html {
   --project-title-color: #1d0e0b;
   --project-sidebar-background-color: #f5ded9;
   --project-sidebar-text-color: #1d0e0b;
-  --holding-page-footer-color: #f5ded9;
   --text-selection-background-color: #1d0e0b;
   --project-nought-color: #94c734;
   --project-troupe-color: #ffa3c6;
@@ -384,7 +379,6 @@ a.custom-navigation:hover {
   display: flex;
   flex-direction: column;
   flex: 1;
-  align-items: left;
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
@@ -430,16 +424,14 @@ a.custom-navigation:hover {
 }
 
 /* Padding around work grid and project page */
-.portfolio,
-.project-wrapper {
-  padding: 2rem 2rem 0;
+.portfolio {
+  padding: 2rem 0;
 }
 
 /* Defining the work page grid */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-  grid-gap: 1rem;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
@@ -449,9 +441,9 @@ a.custom-navigation:hover {
   position: relative;
   /* Required to contain overlay size */
   background: red;
-  border-radius: 1rem;
-  padding: 3rem;
+  padding: 2.5rem;
 }
+
 .work-page-image img {
   border-radius: 1rem;
   margin-bottom: 0.75rem;
@@ -693,32 +685,6 @@ a.custom-navigation:hover {
   transition: 1s ease-in-out;
 }
 
-/* Overlay */
-
-/* .overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: 0.75s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 1em;
-  background-color: var(--overlay-color);
-  transition: opacity 0.3s, visibility 0.3s;
-} */
-
-/* .work-page-grid-item:hover .overlay {
-  visibility: visible;
-  opacity: 0.8;
-} */
-
 /* 
 
  █████  ██████   ██████  ██    ██ ████████ 
@@ -733,9 +699,8 @@ a.custom-navigation:hover {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
-  background: var(--background-color-about);
   margin-top: 6rem;
-  padding: 2rem;
+  padding: 2rem 2rem 0;
 }
 
 .about-image {
@@ -750,7 +715,7 @@ a.custom-navigation:hover {
 
 .about-headline {
   color: #94c734;
-  font-size: 12vw;
+  font-size: 4rem;
   margin-bottom: 2rem;
   max-width: 80vw;
 }
@@ -797,6 +762,59 @@ a.custom-navigation:hover {
   opacity: 80%;
 }
 
+/* Project Page 
+
+██████  ██████   ██████       ██ ███████  ██████ ████████     ██████   █████   ██████  ███████ 
+██   ██ ██   ██ ██    ██      ██ ██      ██         ██        ██   ██ ██   ██ ██       ██      
+██████  ██████  ██    ██      ██ █████   ██         ██        ██████  ███████ ██   ███ █████   
+██      ██   ██ ██    ██ ██   ██ ██      ██         ██        ██      ██   ██ ██    ██ ██      
+██      ██   ██  ██████   █████  ███████  ██████    ██        ██      ██   ██  ██████  ███████ 
+                                                                                               
+*/
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin-top: 7.5rem;
+  padding: 2rem 2rem 0;
+}
+
+.back-button {
+  width: 4rem;
+}
+
+.project-headline {
+  font-size: 3rem;
+  max-width: 80vw;
+  margin-top: 1rem;
+}
+
+.project-subheading-1 {
+  margin-bottom: 0;
+}
+
+.project-subheading-2 {
+  margin: 0.5rem 0 0.75rem;
+}
+
+.project-text-marginless {
+  max-width: 80vw;
+  margin-bottom: 0;
+}
+
+.project-text {
+  max-width: 80vw;
+}
+
+.project-page-image img {
+  border-radius: 1rem;
+}
+
+.project-margin {
+  margin-bottom: 1rem;
+}
+
 /* Global Footer
 
 ███████  ██████   ██████  ████████ ███████ ██████  
@@ -826,7 +844,7 @@ a.custom-navigation:hover {
 
 .footer-call-to-action {
   color: #ffa3c6;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.25rem;
 }
 
 .contact-line {
@@ -890,82 +908,6 @@ a.custom-navigation:hover {
   margin: 0.5rem 0;
 }
 
-/* Project Page 
-
-██████  ██████   ██████       ██ ███████  ██████ ████████     ██████   █████   ██████  ███████ 
-██   ██ ██   ██ ██    ██      ██ ██      ██         ██        ██   ██ ██   ██ ██       ██      
-██████  ██████  ██    ██      ██ █████   ██         ██        ██████  ███████ ██   ███ █████   
-██      ██   ██ ██    ██ ██   ██ ██      ██         ██        ██      ██   ██ ██    ██ ██      
-██      ██   ██  ██████   █████  ███████  ██████    ██        ██      ██   ██  ██████  ███████ 
-                                                                                               
-*/
-
-.project-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* Sidebar */
-.project-aside {
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  color: var(--project-sidebar-text-color);
-  background: var(--project-sidebar-background-color);
-}
-
-.project-navigation {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-.arrow {
-  padding: 0;
-}
-
-.project-image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.project-image {
-  width: 100%;
-  min-height: 50vh;
-  /* TODO: Delete min-height if you want to remove space between project images on project pages on mobile devices. It is used for the demo page only. */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.large-emoji-placeholder {
-  font-size: 12rem;
-  /* TODO: Delete this rule. It is only used for making the placeholder emojis large for demo purposes only. */
-}
-
-.text-section {
-  width: 100%;
-}
-
-.project-text {
-  width: 100%;
-  font-size: 3.25rem;
-  padding: 3rem;
-}
-
-/* Main Project Image Area */
-
-.project-details {
-  width: 100%;
-  padding: 1rem;
-}
-
 /*
 ███████ ██████  ██████   ██████  ██████  
 ██      ██   ██ ██   ██ ██    ██ ██   ██ 
@@ -1000,6 +942,11 @@ a.custom-navigation:hover {
     width: 4.5rem;
   }
 
+  .back-button {
+    width: 4.5rem;
+    margin-bottom: 1rem;
+  }
+
   .header {
     padding: 1.75rem 3rem;
   }
@@ -1012,17 +959,41 @@ a.custom-navigation:hover {
     padding: 3rem 3rem 0 3rem;
   }
 
-  .portfolio,
-  .project-wrapper {
+  .portfolio {
     padding: 3rem 3rem 0;
   }
 
-  .about {
-    padding: 3rem;
+  .work-page-grid-item {
+    border-radius: 1rem;
   }
 
-  .about-bio {
+  .about {
+    padding: 3rem 3rem 0;
+  }
+
+  .about-headline {
+    font-size: 5rem;
+  }
+
+  .about-bio,
+  .project-headline,
+  .project-subheading-1,
+  .project-subheading-2,
+  .project-text,
+  .project-text-marginless {
     max-width: 70vw;
+  }
+
+  .project {
+    padding: 3rem 3rem 0;
+  }
+
+  .project-headline {
+    font-size: 4rem;
+  }
+
+  .footer-headline {
+    font-size: 10vw;
   }
 }
 
@@ -1030,10 +1001,6 @@ a.custom-navigation:hover {
 
 @media (min-width: 992px) {
   /* TODO: Add or adjust styles here for large devices. */
-
-  .holding-page-title {
-    font-size: 2rem;
-  }
 
   h1 {
     font-size: 8.5vw;
@@ -1061,17 +1028,34 @@ a.custom-navigation:hover {
   .footer-wide {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     min-width: 40vw;
   }
 
   .footer-headline {
-    font-size: 6vw;
+    font-size: 8vw;
+    margin-bottom: 0;
+  }
+
+  .work-page-grid-item {
+    padding: 3rem;
   }
 
   .about {
     grid-template-columns: 1fr 2fr;
-    padding: 4rem;
+    padding: 4rem 4rem 0;
+  }
+
+  .about-headline {
+    font-size: 5.5rem;
+  }
+
+  .about-bio,
+  .project-headline,
+  .project-subheading-1,
+  .project-subheading-2,
+  .project-text,
+  .project-text-marginless {
+    max-width: 50vw;
   }
 
   .about-item-1 {
@@ -1085,12 +1069,32 @@ a.custom-navigation:hover {
     border-left: 2px solid #ffa3c6;
   }
 
-  .about-headline {
-    font-size: 6vw;
+  .project {
+    grid-template-columns: 1fr 1.5fr;
+    padding: 4rem 4rem 0;
   }
 
-  .about-bio {
-    max-width: 50vw;
+  .project-item-1 {
+    grid-column: 1 / -1; /* Full-width in the first row */
+  }
+  
+  .project-item-2 {
+    grid-column: 1 / 2; /* Start in the first column */
+  }
+  
+  .project-item-3 {
+    grid-column: 2 / 3; /* Start in the second column next to item 2 */
+  }
+  
+  .project-item-4,
+  .project-item-5,
+  .project-item-6 {
+    grid-column: 1 / -1; /* Full-width for stacked layout */
+  }
+
+  .project-headline {
+    font-size: 4.5rem;
+    margin-top: 0;
   }
 
   .logo {
@@ -1122,23 +1126,13 @@ a.custom-navigation:hover {
     width: 5rem;
   }
 
-  .work-wrapper {
-    padding: 2rem 4rem;
+  .back-button {
+    width: 5rem;
   }
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
     grid-gap: 2rem;
-  }
-
-  /* Grayscale filter with full-colour on hover and tap */
-  .work-page-grid-item a.grayscale img {
-    filter: grayscale(100);
-  }
-
-  .work-page-grid-item > a.grayscale:active img,
-  .work-page-grid-item > a.grayscale:hover img {
-    filter: grayscale(0);
   }
 
   .global-footer {
@@ -1150,46 +1144,8 @@ a.custom-navigation:hover {
   }
 
   /* Padding around work grid and project page */
-  .portfolio,
-  .project-wrapper {
-    padding: 4rem 0 0;
-  }
-
-  /* Project Page Flex Direction on Large Devices */
-  .project-wrapper {
-    flex-direction: row;
-  }
-
-  /* Sidebar on Large Devices */
-  .project-aside {
-    width: 35%;
-    height: 65vh;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 5vh;
-    padding-right: 2rem;
-  }
-
-  /* Main Project Image Area on Large Devices */
-  .project-details {
-    width: 65%;
-  }
-
-  .project-image {
-    min-height: 70vh;
-    /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
-  }
-
-  .project-image-container {
-    flex-direction: row;
-  }
-
-  .project-navigation {
-    justify-content: flex-start;
-  }
-
-  .arrow {
-    padding-right: 1rem;
+  .portfolio {
+    padding: 4rem 4rem 0;
   }
 }
 
@@ -1210,18 +1166,27 @@ a.custom-navigation:hover {
     padding: 2rem 0 2rem 4rem;
   }
 
-  .about-bio {
+  .about-bio,
+  .project-headline,
+  .project-subheading-1,
+  .project-subheading-2,
+  .project-text,
+  .project-text-marginless {
     max-width: 40vw;
   }
 }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
+/* XX-Large devices (larger desktops, 1350px and up) */
 
-@media (min-width: 1400px) {
+@media (min-width: 1350px) {
   /* TODO: Add styles here for XX-large devices. */
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+  }
+
+  .footer-headline {
+    font-size: 7.5vw;
   }
 }
 
@@ -1230,7 +1195,12 @@ a.custom-navigation:hover {
 @media (min-width: 1700px) {
   /* TODO: Add styles here for XXX-large devices. */
 
-  .about-bio {
+  .about-bio,
+  .project-headline,
+  .project-subheading-1,
+  .project-subheading-2,
+  .project-text,
+  .project-text-marginless {
     max-width: 32vw;
   }
 }
