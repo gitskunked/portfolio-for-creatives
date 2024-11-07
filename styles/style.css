@@ -46,7 +46,7 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  /*cursor: url("../assets/temp/up-cursor.png"), auto !important;*/
+  cursor: url("../assets/branding-images/lilyrosen-cursor.svg"), auto !important;
   /* TODO: Change the url above to add a custom cursor. Delete the line above if you want to use the default browser cursor. */
 }
 
@@ -784,9 +784,12 @@ a.custom-navigation:hover {
   width: 4rem;
 }
 
+.project-heading-wrapper {
+  width: fit-content;
+}
+
 .project-headline {
   font-size: 3rem;
-  max-width: 80vw;
   margin-top: 1rem;
 }
 
@@ -809,6 +812,8 @@ a.custom-navigation:hover {
 
 .project-page-image img {
   border-radius: 1rem;
+  width: 100%;
+  max-height: 930px;
 }
 
 .project-margin {
@@ -976,7 +981,6 @@ a.custom-navigation:hover {
   }
 
   .about-bio,
-  .project-headline,
   .project-subheading-1,
   .project-subheading-2,
   .project-text,
@@ -1050,7 +1054,6 @@ a.custom-navigation:hover {
   }
 
   .about-bio,
-  .project-headline,
   .project-subheading-1,
   .project-subheading-2,
   .project-text,
@@ -1070,8 +1073,12 @@ a.custom-navigation:hover {
   }
 
   .project {
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: fit-content(100%) 1fr;
     padding: 4rem 4rem 0;
+  }
+
+  .project-heading-wrapper {
+    padding: 1rem 0 1rem;
   }
 
   .project-item-1 {
@@ -1082,14 +1089,20 @@ a.custom-navigation:hover {
     grid-column: 1 / 2; /* Start in the first column */
   }
   
-  .project-item-3 {
+  .project-item-3,
+  .project-item-5 {
     grid-column: 2 / 3; /* Start in the second column next to item 2 */
+    padding: 1rem 0 1rem 2rem;
+    border-left: 2px solid #94c734;
   }
   
   .project-item-4,
-  .project-item-5,
   .project-item-6 {
     grid-column: 1 / -1; /* Full-width for stacked layout */
+  }
+
+  .project-margin {
+    margin-bottom: 2rem;
   }
 
   .project-headline {
@@ -1166,8 +1179,16 @@ a.custom-navigation:hover {
     padding: 2rem 0 2rem 4rem;
   }
 
+  .project {
+    grid-gap: 4rem;
+  }
+
+  .project-item-3,
+  .project-item-5 {
+    padding: 1rem 0 1rem 4rem;
+  }
+
   .about-bio,
-  .project-headline,
   .project-subheading-1,
   .project-subheading-2,
   .project-text,
@@ -1196,7 +1217,6 @@ a.custom-navigation:hover {
   /* TODO: Add styles here for XXX-large devices. */
 
   .about-bio,
-  .project-headline,
   .project-subheading-1,
   .project-subheading-2,
   .project-text,
