@@ -90,7 +90,7 @@ html {
   --primary-text-color: #f5ded9;
   --accent-color: #673428;
   --hyperlink-color: #f5ded9;
-  --hyperlink-alternate-color: #94c734;
+  --hyperlink-alternate-color: #f5ded9;
   --hover-color: #f34113;
   --visited-color: #f5ded9;
   --project-title-color: #1d0e0b;
@@ -289,8 +289,9 @@ a:active {
 
 a.colored-link {
   color: var(--hyperlink-alternate-color);
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
   text-decoration: none;
   transition: 0.5s ease-in-out;
 }
@@ -300,11 +301,11 @@ a.colored-link:visited {
 }
 
 a.colored-link:hover {
-  color: var(--hover-color);
+  color: #ffa3c6;
 }
 
 a.colored-link:active {
-  color: var(--hover-color);
+  color: #ffa3c6;
 }
 
 a.custom-navigation {
@@ -922,6 +923,25 @@ a.custom-navigation:hover {
 */
 
 /* TODO: Customize your 404 Error Page */
+
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #0458c6;
+}
+
+.error-wrapper {
+  text-align: center;
+}
+
+.error-headline {
+  color: #ffa3c6;
+}
+
+.error-subheading {
+  font-weight: 400;
+}
 
 /* The best 404 pages have become an art in themselves. Your 404 error page is an opportunity to make a memorable impression on your visitors when they don’t land exactly where they hoped. */
 
