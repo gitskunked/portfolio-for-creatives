@@ -46,7 +46,7 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("../assets/branding-images/lilyrosen-cursor.svg"), auto !important;
+  cursor: url("../assets/branding-images/lilyrosen-cursor.png"), auto !important;
   /* TODO: Change the url above to add a custom cursor. Delete the line above if you want to use the default browser cursor. */
 }
 
@@ -372,7 +372,8 @@ a.custom-navigation:hover {
 }
 
 .logo {
-  width: 30vh;
+  width: 25vh;
+  padding-top: 0.5rem;
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
@@ -963,6 +964,11 @@ a.custom-navigation:hover {
     grid-gap: 2rem;
   }
 
+  .logo {
+    width: 30vh;
+    padding-top: 0.25;
+  }
+
   .call-to-action-button {
     width: 4.5rem;
   }
@@ -1132,7 +1138,7 @@ a.custom-navigation:hover {
 
   .logo {
     width: 35vh;
-    /* TODO: Adjust the width of the logo on large devices here. */
+    padding-top: 0;
   }
 
   .hero {
