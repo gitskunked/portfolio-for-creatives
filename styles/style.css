@@ -270,23 +270,6 @@ a:active {
   color: var(--hover-color);
 }
 
-.navigation-arrow {
-  color: var(--alt-background-color);
-}
-
-.navigation-arrow:link {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--accent-color);
-  color: transparent;
-}
-
-.navigation-arrow:active,
-.navigation-arrow:hover {
-  color: var(--accent-color);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--accent-color);
-}
-
 a.colored-link {
   color: var(--hyperlink-alternate-color);
   font-size: 2.5rem;
