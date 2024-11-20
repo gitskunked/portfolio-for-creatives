@@ -103,9 +103,6 @@ html {
   --project-bpm-color: #3b1d16;
   --project-unclouded-color: #0458c6;
   --project-yawpfest-color: #f34113;
-  /* --overlay-color: #0458c6;
-  --overlay-title-color: #000;
-  --overlay-description-color: #000; */
 }
 
 body {
@@ -235,16 +232,6 @@ em {
 .line-break {
   display: block;
 }
-
-/* .overlay-title {
-  font-size: 2.5rem;
-  text-align: center;
-  color: var(--overlay-title-color);
-}
-
-.overlay-description {
-  color: var(--overlay-description-color);
-} */
 
 /* Hyperlink Styles */
 
