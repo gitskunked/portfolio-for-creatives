@@ -804,6 +804,17 @@ a.about-subheading-2 {
   margin-bottom: 1rem;
 }
 
+.project-team-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-team {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+
 /* Global Footer
 
 ███████  ██████   ██████  ████████ ███████ ██████  
