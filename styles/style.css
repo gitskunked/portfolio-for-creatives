@@ -102,7 +102,7 @@ html {
   --project-wag-and-wander-color: #f5ded9;
   --project-bpm-color: #3b1d16;
   --project-unclouded-color: #0458c6;
-  --project-yawpfest-color: #f34113;
+  --project-bookish-color: #f34113;
 }
 
 body {
@@ -619,16 +619,16 @@ a.custom-navigation:hover {
   transition: 1s ease-in-out;
 }
 
-.project-yawpfest {
-  background: var(--project-yawpfest-color);
+.project-bookish {
+  background: var(--project-bookish-color);
   transition: 0.5s ease-in-out;
 }
 
-.project-yawpfest-text {
+.project-bookish-text {
   color: #f5ded9;
 }
 
-.project-yawpfest-category {
+.project-bookish-category {
   max-width: fit-content;
   border-radius: 10rem;
   padding: 0.75rem 1.5rem;
@@ -638,21 +638,21 @@ a.custom-navigation:hover {
   font-weight: 700;
   letter-spacing: 0.1rem;
   background: #f5ded9;
-  color: var(--project-yawpfest-color);
+  color: var(--project-bookish-color);
 }
 
-.project-yawpfest:hover {
+.project-bookish:hover {
   background: #f5ded9;
   transition: 0.5s ease-in-out;
 }
 
-.project-yawpfest:hover .project-yawpfest-text {
-  color: var(--project-yawpfest-color);
+.project-bookish:hover .project-bookish-text {
+  color: var(--project-bookish-color);
   transition: 1s ease-in-out;
 }
 
-.project-yawpfest:hover .project-yawpfest-category {
-  background: var(--project-yawpfest-color);
+.project-bookish:hover .project-bookish-category {
+  background: var(--project-bookish-color);
   color: #f5ded9;
   transition: 1s ease-in-out;
 }
