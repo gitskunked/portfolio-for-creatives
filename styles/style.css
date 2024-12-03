@@ -797,7 +797,7 @@ a.about-subheading-2 {
 .project-page-image img {
   border-radius: 1rem;
   width: 100%;
-  max-height: 930px;
+  max-height: 850px;
 }
 
 .project-margin {
@@ -1101,15 +1101,13 @@ a.about-subheading-2 {
     grid-column: 1 / 2; /* Start in the first column */
   }
   
-  .project-item-3,
-  .project-item-5 {
+  .project-item-3 {
     grid-column: 2 / 3; /* Start in the second column next to item 2 */
     padding: 1rem 0 1rem 2rem;
     border-left: 2px solid #94c734;
   }
   
-  .project-item-4,
-  .project-item-6 {
+  .project-item-4 {
     grid-column: 1 / -1; /* Full-width for stacked layout */
   }
 
@@ -1195,8 +1193,7 @@ a.about-subheading-2 {
     grid-gap: 4rem;
   }
 
-  .project-item-3,
-  .project-item-5 {
+  .project-item-3 {
     padding: 1rem 0 1rem 4rem;
   }
 
