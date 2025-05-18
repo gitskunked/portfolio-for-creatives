@@ -75,12 +75,12 @@ html {
   --heading-typeface: "Open Sauce Two", "Figtree", sans-serif;
   --project-title-typeface: "Open Sauce Two", "Figtree", sans-serif;
   --subheading-typeface: "Courier Prime", serif;
-  --background-color: #1d0e0b;
+  --background-color: #171414;
   --background-color-header: #0458c6;
-  --background-color-about: #1d0e0b;
-  --background-color-footer: #1d0e0b;
+  --background-color-about: #171414;
+  --background-color-footer: #171414;
   --alt-background-color: #0458c6;
-  --background-color-holding-page: #1d0e0b;
+  --background-color-holding-page: #171414;
   --h1-color: #f5ded9;
   --h2-color: #f5ded9;
   --h3-color: #f5ded9;
@@ -93,10 +93,10 @@ html {
   --hyperlink-alternate-color: #f5ded9;
   --hover-color: #f34113;
   --visited-color: #f5ded9;
-  --project-title-color: #1d0e0b;
+  --project-title-color: #171414;
   --project-sidebar-background-color: #f5ded9;
-  --project-sidebar-text-color: #1d0e0b;
-  --text-selection-background-color: #1d0e0b;
+  --project-sidebar-text-color: #171414;
+  --text-selection-background-color: #171414;
   --project-nought-color: #94c734;
   --project-troupe-color: #ffa3c6;
   --project-wag-and-wander-color: #f5ded9;
@@ -1107,17 +1107,17 @@ a.about-subheading-2 {
   .project-item-1 {
     grid-column: 1 / -1; /* Full-width in the first row */
   }
-  
+
   .project-item-2 {
     grid-column: 1 / 2; /* Start in the first column */
   }
-  
+
   .project-item-3 {
     grid-column: 2 / 3; /* Start in the second column next to item 2 */
     padding: 1rem 0 1rem 2rem;
     border-left: 2px solid #94c734;
   }
-  
+
   .project-item-4 {
     grid-column: 1 / -1; /* Full-width for stacked layout */
   }
