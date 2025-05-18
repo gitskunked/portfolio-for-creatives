@@ -76,7 +76,7 @@ html {
   --project-title-typeface: "Open Sauce Two", "Figtree", sans-serif;
   --subheading-typeface: "Courier Prime", serif;
   --background-color: #171414;
-  --background-color-header: #0458c6;
+  --background-color-header: #1714149b;
   --background-color-about: #171414;
   --background-color-footer: #171414;
   --alt-background-color: #0458c6;
@@ -131,10 +131,11 @@ svg {
 }
 
 .header {
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   background-color: var(--background-color-header);
+  backdrop-filter: blur(4px);
   padding: 1.5rem 2rem;
   z-index: 1000; /* Keeps it above other elements */
 }
@@ -354,7 +355,6 @@ a.custom-navigation:hover {
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
-  margin-top: 8rem;
   padding: 2rem 2rem 0 2rem;
   text-align: left;
 }
