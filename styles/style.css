@@ -89,7 +89,7 @@ html {
   --h6-color: #f5ded9;
   --primary-text-color: #f5ded9;
   --accent-color: #673428;
-  --hyperlink-color: #f5ded9;
+  --hyperlink-color: #ffa3c6;
   --hyperlink-alternate-color: #f5ded9;
   --hover-color: #f34113;
   --visited-color: #f5ded9;
@@ -128,16 +128,6 @@ svg {
   vertical-align: top;
   /* Removes the gap/space in inline elements for text descenders. */
   object-fit: cover;
-}
-
-.header {
-  position: sticky;
-  width: 100%;
-  top: 0;
-  background-color: var(--background-color-header);
-  backdrop-filter: blur(4px);
-  padding: 1.5rem 2rem;
-  z-index: 1000; /* Keeps it above other elements */
 }
 
 /* Global & Mobile Typography 
@@ -325,26 +315,42 @@ a.custom-navigation:hover {
                                  
 */
 
-.hero {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
+.header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background-color: var(--background-color-header);
+  backdrop-filter: blur(4px);
+  padding: 1.5rem 2rem;
+  z-index: 1000; /* Keeps it above other elements */
 }
 
-.branding-navigation {
+.header-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.navigation-padding {
-  padding: 1rem 0;
+.header-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.work-button {
+  width: 4.5rem;
+  transform: rotate(-6deg);
+}
+
+.about-button {
+  width: 5rem;
+  transform: rotate(4deg);
+  margin-left: 1rem;
 }
 
 .logo {
   width: 25vh;
-  padding-top: 0.5rem;
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
@@ -957,11 +963,6 @@ a.about-subheading-2 {
     grid-gap: 2rem;
   }
 
-  .logo {
-    width: 30vh;
-    padding-top: 0.25rem;
-  }
-
   .call-to-action-button {
     width: 4.5rem;
   }
@@ -972,7 +973,7 @@ a.about-subheading-2 {
   }
 
   .header {
-    padding: 1.75rem 3rem;
+    padding: 1.5rem 3rem;
   }
 
   .global-footer {
@@ -1043,7 +1044,7 @@ a.about-subheading-2 {
   }
 
   .header {
-    padding: 2rem 4rem;
+    padding: 1.5rem 4rem;
   }
 
   .footer-wrapper {
@@ -1132,12 +1133,7 @@ a.about-subheading-2 {
   }
 
   .logo {
-    width: 35vh;
-    padding-top: 0;
-  }
-
-  .hero {
-    min-height: 100vh;
+    width: 30vh;
   }
 
   .hero-headline-wrapper {
