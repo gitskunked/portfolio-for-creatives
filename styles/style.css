@@ -169,12 +169,12 @@ svg {
 */
 
 h1 {
-  font-size: 13vw;
+  font-size: 9.5vw;
   font-family: var(--heading-typeface);
   font-weight: 900;
-  margin-bottom: 2rem;
-  line-height: 0.9;
+  line-height: 1;
   color: var(--h1-color);
+  word-break: break-word;
 }
 
 h2 {
@@ -236,20 +236,20 @@ em {
   margin-bottom: 2rem;
 }
 
-.graphic-designer {
+.line-break {
+  display: block;
+}
+
+.pink {
   color: #ffa3c6;
 }
 
-.type-enthusiast {
+.green {
   color: #94c734;
 }
 
-.problem-solver {
-  color: #0458c6;
-}
-
-.line-break {
-  display: block;
+.orange {
+  color: #f34113;
 }
 
 /* Hyperlink Styles */
@@ -338,14 +338,20 @@ a.custom-navigation:hover {
                                  
 */
 
+.site-wrapper {
+  padding: 0 2rem;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
 .header {
   position: sticky;
   width: 100%;
   top: 0;
   background-color: var(--background-color-header);
   backdrop-filter: blur(4px);
-  padding: 1.5rem 2rem;
   z-index: 1000;
+  padding: 1.5rem 0;
 }
 
 .header-navigation {
@@ -385,37 +391,27 @@ a.custom-navigation:hover {
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
-.hero-headline-wrapper {
+.hero-wrapper {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
-  padding: 2rem 2rem 0 2rem;
   text-align: left;
+  gap: 2rem;
+  padding: 2rem 0;
 }
 
-.hero-icon {
-  font-size: 4rem;
+.take-a-peek {
+  width: auto;
+  align-self: center;
+  margin-top: 1rem;
 }
 
-.call-to-action {
-  margin-top: 8rem;
-}
-
-.call-to-action-text {
-  font-family: var(--subheading-typeface);
-  font-size: 1.35rem;
-  font-style: italic;
-  text-align: right;
-  line-height: 0.85rem;
-}
-
-.call-to-action-button {
-  margin: 2.5rem 0 1.75rem;
-  width: 4rem;
-  justify-self: end;
+.take-a-peek img {
+  width: 100%;
+  max-width: 12rem;
+  height: auto;
+  display: block;
 }
 
 /* Work Page Layout
@@ -430,11 +426,12 @@ a.custom-navigation:hover {
 
 .work-wrapper {
   flex: 1;
+  padding: 1.5rem 0;
 }
 
 /* Padding around work grid and project page */
 .portfolio {
-  padding: 2rem 0;
+  padding: 0;
 }
 
 /* Defining the work page grid */
@@ -864,7 +861,6 @@ a.about-subheading-2 {
 
 .global-footer {
   background: var(--background-color-footer);
-  padding: 2rem;
 }
 
 .footer-wrapper {
@@ -989,34 +985,18 @@ a.about-subheading-2 {
 @media (min-width: 768px) {
   /* TODO: Add styles here for medium devices. */
 
+  .site-wrapper {
+    padding: 0 3rem;
+  }
+
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     grid-gap: 2rem;
   }
 
-  .call-to-action-button {
-    width: 4.5rem;
-  }
-
   .back-button {
     width: 4.5rem;
     margin-bottom: 1rem;
-  }
-
-  .header {
-    padding: 1.5rem 3rem;
-  }
-
-  .global-footer {
-    padding: 3rem;
-  }
-
-  .hero-headline-wrapper {
-    padding: 3rem 3rem 0 3rem;
-  }
-
-  .portfolio {
-    padding: 3rem 3rem 0;
   }
 
   .work-page-grid-item {
@@ -1057,8 +1037,12 @@ a.about-subheading-2 {
 @media (min-width: 992px) {
   /* TODO: Add or adjust styles here for large devices. */
 
+  .site-wrapper {
+    padding: 0 4rem;
+  }
+
   h1 {
-    font-size: 8.5vw;
+    font-size: 7vw;
   }
 
   h3 {
@@ -1067,15 +1051,6 @@ a.about-subheading-2 {
 
   a.about-subheading-2 {
     font-size: 1.5rem;
-  }
-
-  .call-to-action-text {
-    font-size: 1.5rem;
-    line-height: 1rem;
-  }
-
-  .header {
-    padding: 1.5rem 4rem;
   }
 
   .footer-wrapper {
@@ -1129,11 +1104,6 @@ a.about-subheading-2 {
 
   .project {
     grid-template-columns: fit-content(100%) 1fr;
-    padding: 4rem 4rem 0;
-  }
-
-  .project-heading-wrapper {
-    padding: 1rem 0 1rem;
   }
 
   .project-item-1 {
@@ -1167,24 +1137,25 @@ a.about-subheading-2 {
     width: 20rem;
   }
 
-  .hero-headline-wrapper {
-    padding: 4rem 4rem 0 4rem;
+  .hero-wrapper {
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    align-items: flex-end;
+    padding: 2rem 0 4rem;
   }
 
   .hero-main-text {
     flex-grow: 1; /* This will make the main text area take up available space */
   }
 
-  .call-to-action {
+  .take-a-peek {
+    width: auto;
+    flex-shrink: 0;
     align-self: flex-end;
-    margin-left: auto; /* Pushes the .call-to-action to the right */
   }
 
-  .call-to-action-button {
-    width: 5rem;
+  .take-a-peek img {
+    max-width: 12rem;
   }
 
   .back-button {
@@ -1197,16 +1168,10 @@ a.about-subheading-2 {
   }
 
   .global-footer {
-    padding: 4rem;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box; /* Ensures padding doesn't overflow */
-  }
-
-  /* Padding around work grid and project page */
-  .portfolio {
-    padding: 4rem 4rem 0;
   }
 }
 
@@ -1214,6 +1179,14 @@ a.about-subheading-2 {
 
 @media (min-width: 1200px) {
   /* TODO: Add styles here for X-large devices. */
+
+  h1 {
+    font-size: 6.75vw;
+  }
+
+  .hero-main-text {
+    max-width: 60vw;
+  }
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
