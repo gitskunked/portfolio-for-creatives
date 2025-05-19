@@ -345,7 +345,7 @@ a.custom-navigation:hover {
   background-color: var(--background-color-header);
   backdrop-filter: blur(4px);
   padding: 1.5rem 2rem;
-  z-index: 1000; /* Keeps it above other elements */
+  z-index: 1000;
 }
 
 .header-navigation {
@@ -370,6 +370,14 @@ a.custom-navigation:hover {
   width: 5rem;
   transform: rotate(4deg);
   margin-left: 1rem;
+}
+
+.work-button:hover {
+  transform: rotate(-22deg);
+}
+
+.about-button:hover {
+  transform: rotate(20deg);
 }
 
 .logo {
