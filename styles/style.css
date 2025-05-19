@@ -80,11 +80,6 @@ html {
   --project-title-typeface: "Open Sauce Two", "Figtree", sans-serif;
   --subheading-typeface: "Courier Prime", "Courier", monospace;
   --background-color: #171414;
-  --background-color-header: #1714149b;
-  --background-color-about: #171414;
-  --background-color-footer: #171414;
-  --alt-background-color: #0458c6;
-  --background-color-holding-page: #171414;
   --h1-color: #f5ded9;
   --h2-color: #f5ded9;
   --h3-color: #f5ded9;
@@ -95,12 +90,6 @@ html {
   --accent-color: #362a2a;
   --hyperlink-color: #ffa3c6;
   --hyperlink-alternate-color: #f5ded9;
-  --hover-color: #f34113;
-  --visited-color: #f5ded9;
-  --project-title-color: #171414;
-  --project-sidebar-background-color: #f5ded9;
-  --project-sidebar-text-color: #171414;
-  --text-selection-background-color: #171414;
   --project-nought-color: #94c734;
   --project-troupe-color: #ffa3c6;
   --project-wag-and-wander-color: #f5ded9;
@@ -259,11 +248,6 @@ a:link {
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.5s ease-in-out;
-}
-
-a:visited {
-  color: var(--visited-color);
   transition: 0.5s ease-in-out;
 }
 
