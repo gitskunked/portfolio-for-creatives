@@ -42,7 +42,7 @@ No media query for `xs` since this is the default in Bootstrap
 */
 
 /* Add Border Box and Smooth Scroll 
-  cursor: url("../assets/branding-images/lilyrosen-cursor.svg"), auto;
+  cursor: url("../assets/home-images/lilyrosen-cursor.svg"), auto;
 */
 
 html {
@@ -80,12 +80,6 @@ html {
   --project-title-typeface: "Open Sauce Two", "Figtree", sans-serif;
   --subheading-typeface: "Courier Prime", "Courier", monospace;
   --background-color: #171414;
-  --h1-color: #f5ded9;
-  --h2-color: #f5ded9;
-  --h3-color: #f5ded9;
-  --h4-color: #f5ded9;
-  --h5-color: #f5ded9;
-  --h6-color: #f5ded9;
   --primary-text-color: #f5ded9;
   --accent-color: #362a2a;
   --hyperlink-color: #ffa3c6;
@@ -116,8 +110,8 @@ body {
   height: 32px;
   pointer-events: none;
   z-index: 9999;
-  background: url("../assets/branding-images/lilyrosen-cursor.svg") no-repeat
-    center center;
+  background: url("../assets/home-images/lilyrosen-cursor.svg") no-repeat center
+    center;
   background-size: contain;
 
   /* Smooth only scale transition (not position) */
@@ -127,7 +121,7 @@ body {
 
 /* On hover, swap image + scale */
 #custom-cursor.hover {
-  background-image: url("../assets/branding-images/lilyrosen-cursor-hover.svg");
+  background-image: url("../assets/home-images/lilyrosen-cursor-hover.svg");
   transform: translate(-50%, -50%) scale(1.4);
 }
 
@@ -162,16 +156,15 @@ h1 {
   font-family: var(--heading-typeface);
   font-weight: 900;
   line-height: 1;
-  color: var(--h1-color);
-  word-break: break-word;
+  color: var(--primary-text-color);
 }
 
 h2 {
   font-size: 2.5rem;
   font-family: var(--heading-typeface);
-  font-weight: 900;
+  font-weight: 800;
   margin-bottom: 1rem;
-  color: var(--h2-color);
+  color: var(--primary-text-color);
 }
 
 h3 {
@@ -181,7 +174,7 @@ h3 {
   font-family: var(--subheading-typeface);
   margin-bottom: 1.5rem;
   line-height: 1.3;
-  color: var(--h3-color);
+  color: var(--primary-text-color);
 }
 
 h4 {
@@ -189,7 +182,7 @@ h4 {
   font-weight: 500;
   font-style: italic;
   margin-bottom: 1rem;
-  color: var(--h4-color);
+  color: var(--primary-text-color);
 }
 
 h5 {
@@ -197,7 +190,7 @@ h5 {
   font-weight: 400;
   font-style: italic;
   margin-bottom: 1rem;
-  color: var(--h5-color);
+  color: var(--primary-text-color);
 }
 
 h6 {
@@ -205,7 +198,7 @@ h6 {
   line-height: 1.5;
   font-style: italic;
   margin-bottom: 1rem;
-  color: var(--h6-color);
+  color: var(--primary-text-color);
 }
 
 p {
@@ -220,8 +213,6 @@ em {
 
 .project-title {
   font-size: 3.725rem;
-  font-family: var(--project-title-typeface);
-  color: var(--project-title-color);
   margin-bottom: 2rem;
 }
 
@@ -332,7 +323,7 @@ a.custom-navigation:hover {
   position: sticky;
   width: 100%;
   top: 0;
-  background-color: var(--background-color-header);
+  background-color: #1714149b;
   backdrop-filter: blur(4px);
   z-index: 1000;
   padding: 1.5rem 0;
@@ -449,7 +440,6 @@ a.custom-navigation:hover {
 
 .project-nought {
   background: var(--project-nought-color);
-  transition: 0.5s ease-in-out;
 }
 
 .project-nought-text {
@@ -469,25 +459,8 @@ a.custom-navigation:hover {
   color: var(--project-nought-color);
 }
 
-.project-nought:hover {
-  background: #3b1d16;
-  transition: 0.5s ease-in-out;
-}
-
-.project-nought:hover .project-nought-text {
-  color: var(--project-nought-color);
-  transition: 1s ease-in-out;
-}
-
-.project-nought:hover .project-nought-category {
-  background: var(--project-nought-color);
-  color: #3b1d16;
-  transition: 1s ease-in-out;
-}
-
 .project-troupe {
   background: var(--project-troupe-color);
-  transition: 0.5s ease-in-out;
 }
 
 .project-troupe-text {
@@ -507,25 +480,8 @@ a.custom-navigation:hover {
   color: var(--project-troupe-color);
 }
 
-.project-troupe:hover {
-  background: #0458c6;
-  transition: 0.5s ease-in-out;
-}
-
-.project-troupe:hover .project-troupe-text {
-  color: var(--project-troupe-color);
-  transition: 1s ease-in-out;
-}
-
-.project-troupe:hover .project-troupe-category {
-  background: var(--project-troupe-color);
-  color: #0458c6;
-  transition: 1s ease-in-out;
-}
-
 .project-wag-and-wander {
   background: var(--project-wag-and-wander-color);
-  transition: 0.5s ease-in-out;
 }
 
 .project-wag-and-wander-text {
@@ -545,25 +501,8 @@ a.custom-navigation:hover {
   color: var(--project-wag-and-wander-color);
 }
 
-.project-wag-and-wander:hover {
-  background: #f34113;
-  transition: 0.5s ease-in-out;
-}
-
-.project-wag-and-wander:hover .project-wag-and-wander-text {
-  color: var(--project-wag-and-wander-color);
-  transition: 1s ease-in-out;
-}
-
-.project-wag-and-wander:hover .project-wag-and-wander-category {
-  background: var(--project-wag-and-wander-color);
-  color: #f34113;
-  transition: 1s ease-in-out;
-}
-
 .project-bpm {
   background: var(--project-bpm-color);
-  transition: 0.5s ease-in-out;
 }
 
 .project-bpm-text {
@@ -583,25 +522,8 @@ a.custom-navigation:hover {
   color: var(--project-bpm-color);
 }
 
-.project-bpm:hover {
-  background: #94c734;
-  transition: 0.5s ease-in-out;
-}
-
-.project-bpm:hover .project-bpm-text {
-  color: var(--project-bpm-color);
-  transition: 1s ease-in-out;
-}
-
-.project-bpm:hover .project-bpm-category {
-  background: var(--project-bpm-color);
-  color: #94c734;
-  transition: 1s ease-in-out;
-}
-
 .project-unclouded {
   background: var(--project-unclouded-color);
-  transition: 0.5s ease-in-out;
 }
 
 .project-unclouded-text {
@@ -621,25 +543,8 @@ a.custom-navigation:hover {
   color: var(--project-unclouded-color);
 }
 
-.project-unclouded:hover {
-  background: #ffa3c6;
-  transition: 0.5s ease-in-out;
-}
-
-.project-unclouded:hover .project-unclouded-text {
-  color: var(--project-unclouded-color);
-  transition: 1s ease-in-out;
-}
-
-.project-unclouded:hover .project-unclouded-category {
-  background: var(--project-unclouded-color);
-  color: #ffa3c6;
-  transition: 1s ease-in-out;
-}
-
 .project-bookish {
   background: var(--project-bookish-color);
-  transition: 0.5s ease-in-out;
 }
 
 .project-bookish-text {
@@ -657,22 +562,6 @@ a.custom-navigation:hover {
   letter-spacing: 0.1rem;
   background: #f5ded9;
   color: var(--project-bookish-color);
-}
-
-.project-bookish:hover {
-  background: #f5ded9;
-  transition: 0.5s ease-in-out;
-}
-
-.project-bookish:hover .project-bookish-text {
-  color: var(--project-bookish-color);
-  transition: 1s ease-in-out;
-}
-
-.project-bookish:hover .project-bookish-category {
-  background: var(--project-bookish-color);
-  color: #f5ded9;
-  transition: 1s ease-in-out;
 }
 
 /* 
