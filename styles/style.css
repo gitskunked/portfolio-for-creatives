@@ -78,7 +78,7 @@ html {
   --body-typeface: "Open Sauce Two", "Figtree", sans-serif;
   --heading-typeface: "Open Sauce Two", "Figtree", sans-serif;
   --project-title-typeface: "Open Sauce Two", "Figtree", sans-serif;
-  --subheading-typeface: "Courier Prime", serif;
+  --subheading-typeface: "Courier Prime", "Courier", monospace;
   --background-color: #171414;
   --background-color-header: #1714149b;
   --background-color-about: #171414;
@@ -92,7 +92,7 @@ html {
   --h5-color: #f5ded9;
   --h6-color: #f5ded9;
   --primary-text-color: #f5ded9;
-  --accent-color: #673428;
+  --accent-color: #362a2a;
   --hyperlink-color: #ffa3c6;
   --hyperlink-alternate-color: #f5ded9;
   --hover-color: #f34113;
@@ -132,7 +132,7 @@ body {
   background-size: contain;
 
   /* Smooth only scale transition (not position) */
-  transition: transform 0.2s ease, background-image 0s;
+  transition: transform 0.5s ease, background-image 0s;
   transform: translate(-50%, -50%) scale(1);
 }
 
