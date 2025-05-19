@@ -41,13 +41,17 @@ No media query for `xs` since this is the default in Bootstrap
                                                                                        
 */
 
-/* Add Border Box and Smooth Scroll */
+/* Add Border Box and Smooth Scroll 
+  cursor: url("../assets/branding-images/lilyrosen-cursor.svg"), auto;
+*/
 
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("../assets/branding-images/lilyrosen-cursor.svg"), auto !important;
-  /* TODO: Change the url above to add a custom cursor. Delete the line above if you want to use the default browser cursor. */
+}
+
+* {
+  cursor: none !important;
 }
 
 *,
@@ -112,6 +116,30 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+/* Cursor base */
+#custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  z-index: 9999;
+  background: url("../assets/branding-images/lilyrosen-cursor.svg") no-repeat
+    center center;
+  background-size: contain;
+
+  /* Smooth only scale transition (not position) */
+  transition: transform 0.2s ease, background-image 0s;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* On hover, swap image + scale */
+#custom-cursor.hover {
+  background-image: url("../assets/branding-images/lilyrosen-cursor-hover.svg");
+  transform: translate(-50%, -50%) scale(1.4);
 }
 
 /* The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text). */
@@ -240,12 +268,7 @@ a:visited {
 }
 
 a:hover {
-  color: var(--hover-color);
   transition: 0.5s ease-in-out;
-}
-
-a:active {
-  color: var(--hover-color);
 }
 
 a.colored-link {
@@ -350,7 +373,7 @@ a.custom-navigation:hover {
 }
 
 .logo {
-  width: 25vh;
+  width: 15rem;
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
@@ -1133,7 +1156,7 @@ a.about-subheading-2 {
   }
 
   .logo {
-    width: 30vh;
+    width: 20rem;
   }
 
   .hero-headline-wrapper {

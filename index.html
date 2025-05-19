@@ -246,5 +246,27 @@
         <p class="copyright">&copy; Lily Rosen 2024 — 2025</p>
       </div>
     </footer>
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
+
+    <script>
+      const cursor = document.getElementById("custom-cursor");
+
+      // Track mouse movement separately from scale transform
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+      });
+
+      // Add hover effects
+      document.querySelectorAll("a, button, .hover-target").forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          cursor.classList.add("hover");
+        });
+        el.addEventListener("mouseleave", () => {
+          cursor.classList.remove("hover");
+        });
+      });
+    </script>
   </body>
 </html>
