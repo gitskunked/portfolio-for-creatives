@@ -293,12 +293,12 @@ a:hover {
 }
 
 .work-button {
-  width: 3.5rem;
+  width: 4rem;
   transform: rotate(-6deg);
 }
 
 .about-button {
-  width: 4rem;
+  width: 4.5rem;
   transform: rotate(4deg);
   margin-left: 1rem;
 }
@@ -322,7 +322,7 @@ a:hover {
   width: 100%;
   box-sizing: border-box;
   text-align: left;
-  gap: 1rem;
+  gap: 0.5rem;
   padding: 2rem 0 3.5rem;
 }
 
