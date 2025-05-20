@@ -308,7 +308,7 @@ a:hover {
 }
 
 .logo {
-  width: 17rem;
+  width: 13rem;
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
@@ -715,6 +715,10 @@ a.footer-icon:hover {
 
   .site-wrapper {
     padding: 0 3rem;
+  }
+
+  .logo {
+    width: 16rem;
   }
 
   .header-buttons {
