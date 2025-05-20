@@ -145,7 +145,7 @@ svg {
 */
 
 h1 {
-  font-size: 9.25vw;
+  font-size: 9.5vw;
   font-family: var(--heading-typeface);
   font-weight: 900;
   line-height: 1;
@@ -153,7 +153,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-family: var(--heading-typeface);
   font-weight: 700;
   margin-bottom: 1rem;
@@ -161,7 +161,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 200;
   font-style: italic;
   font-family: var(--subheading-typeface);
@@ -264,7 +264,7 @@ a:hover {
 */
 
 .site-wrapper {
-  padding: 0 1.75rem;
+  padding: 0 2rem;
   box-sizing: border-box;
   max-width: 100%;
 }
@@ -290,6 +290,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 0.75rem;
 }
 
 .work-button {
@@ -300,7 +301,6 @@ a:hover {
 .about-button {
   width: 4.5rem;
   transform: rotate(4deg);
-  margin-left: 1rem;
 }
 
 .work-button:hover {
@@ -322,7 +322,7 @@ a:hover {
   width: 100%;
   box-sizing: border-box;
   text-align: left;
-  gap: 0.25rem;
+  gap: 2rem;
   padding: 2rem 0 3.5rem;
 }
 
@@ -721,10 +721,6 @@ a.footer-icon:hover {
     padding: 0 3rem;
   }
 
-  .hero-wrapper {
-    gap: 2rem;
-  }
-
   .work-button {
     width: 4.5rem;
   }
@@ -782,6 +778,10 @@ a.footer-icon:hover {
 
   h2 {
     font-size: 2.5rem;
+  }
+
+  .header-buttons {
+    gap: 1rem;
   }
 
   a.about-subheading-2 {
