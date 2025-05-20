@@ -41,10 +41,6 @@ No media query for `xs` since this is the default in Bootstrap
                                                                                        
 */
 
-/* Add Border Box and Smooth Scroll 
-  cursor: url("../assets/home-images/lilyrosen-cursor.svg"), auto;
-*/
-
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -967,5 +963,11 @@ a.footer-icon:hover {
   .project-text,
   .project-text-marginless {
     max-width: 32vw;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  #custom-cursor {
+    display: none !important;
   }
 }
