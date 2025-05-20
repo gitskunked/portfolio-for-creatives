@@ -145,7 +145,7 @@ svg {
 */
 
 h1 {
-  font-size: 9.25vw;
+  font-size: 9.5vw;
   font-family: var(--heading-typeface);
   font-weight: 900;
   line-height: 1;
@@ -290,7 +290,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .work-button {
@@ -719,6 +719,10 @@ a.footer-icon:hover {
 
   .site-wrapper {
     padding: 0 3rem;
+  }
+
+  .header-buttons {
+    gap: 0.75rem;
   }
 
   .work-button {
