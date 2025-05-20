@@ -83,13 +83,6 @@ html {
   --primary-text-color: #f5ded9;
   --accent-color: #362a2a;
   --hyperlink-color: #ffa3c6;
-  --hyperlink-alternate-color: #f5ded9;
-  --project-nought-color: #94c734;
-  --project-troupe-color: #ffa3c6;
-  --project-wag-and-wander-color: #f5ded9;
-  --project-bpm-color: #3b1d16;
-  --project-yawpfest-color: #0458c6;
-  --project-bookish-color: #f34113;
 }
 
 body {
@@ -410,7 +403,7 @@ a:hover {
 .overlay {
   position: absolute;
   inset: 0;
-  background: #171414;
+  background: #171414; /* fallback */
   opacity: 0;
   transition: opacity 0.35s ease-in-out;
   display: flex;
