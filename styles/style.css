@@ -267,24 +267,6 @@ a.colored-link:active {
   color: #ffa3c6;
 }
 
-a.custom-navigation {
-  margin-right: 1.5rem;
-  flex-direction: column;
-  font-family: var(--subheading-typeface);
-  font-size: 1.35rem;
-  font-weight: 200;
-  font-style: italic;
-  line-height: 0;
-  transition: 0.5s ease-in-out;
-}
-
-a.custom-navigation:hover {
-  color: #ffa3c6;
-  font-size: 1.35rem;
-  font-weight: 700;
-  transition: 0.25s ease-in-out;
-}
-
 .footer-nav-item {
   line-height: 1.3;
 }
@@ -373,7 +355,7 @@ a.custom-navigation:hover {
   box-sizing: border-box;
   text-align: left;
   gap: 2rem;
-  padding: 2rem 0 4rem;
+  padding: 2rem 0 3.5rem;
 }
 
 .take-a-peek {
@@ -401,8 +383,7 @@ a.custom-navigation:hover {
 
 /* Full-bleed section override */
 .portfolio {
-  padding: 0;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 
 /* Defining the work page grid */
@@ -417,8 +398,24 @@ a.custom-navigation:hover {
   aspect-ratio: 3 / 2;
   position: relative;
   overflow: hidden;
-  border: 1.5px solid #ffa3c6;
+  border: 1.5px solid #f5ded9; /* fallback */
   border-radius: 0.5rem;
+}
+
+.work-item.pink-border {
+  border-color: #ffa3c6;
+}
+
+.work-item.orange-border {
+  border-color: #f34113;
+}
+
+.work-item.green-border {
+  border-color: #94c734;
+}
+
+.work-item.blue-border {
+  border-color: #0458c6;
 }
 
 .work-image {
@@ -438,12 +435,28 @@ a.custom-navigation:hover {
 .overlay {
   position: absolute;
   inset: 0;
-  background: #4a2634;
+  background: #171414;
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
   display: flex;
   padding: 1.75rem;
   text-align: left;
+}
+
+.overlay.pink-overlay {
+  background: #4a2634;
+}
+
+.overlay.orange-overlay {
+  background: #3b1d16;
+}
+
+.overlay.green-overlay {
+  background: #363b16;
+}
+
+.overlay.blue-overlay {
+  background: #192536;
 }
 
 .work-item:hover .overlay,
@@ -463,7 +476,7 @@ a.custom-navigation:hover {
 .tags li {
   font-size: 0.75rem;
   background: #f5ded9;
-  color: #4a2634;
+  color: #171414; /* fallback */
   border-radius: 10rem;
   padding: 0.6rem 1.1rem;
   text-transform: uppercase;
@@ -915,6 +928,7 @@ a.about-subheading-2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    padding: 2rem 0 5rem;
   }
 
   .hero-main-text {
