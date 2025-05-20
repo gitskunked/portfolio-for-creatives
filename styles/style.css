@@ -476,7 +476,7 @@ a.colored-link:active {
 .tags li {
   font-size: 0.75rem;
   background: #f5ded9;
-  color: #171414; /* fallback */
+  color: #171414;
   border-radius: 10rem;
   padding: 0.6rem 1rem;
   text-transform: uppercase;
