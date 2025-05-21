@@ -246,30 +246,21 @@
     <script>
       const cursor = document.getElementById("custom-cursor");
 
-      // Detect touch device
-      const isTouchDevice =
-        "ontouchstart" in window || navigator.maxTouchPoints > 0;
+      // Track mouse movement separately from scale transform
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+      });
 
-      if (!isTouchDevice) {
-        // Show and move cursor on mousemove
-        document.addEventListener("mousemove", (e) => {
-          cursor.style.left = `${e.clientX}px`;
-          cursor.style.top = `${e.clientY}px`;
+      // Add hover effects
+      document.querySelectorAll("a, button, .hover-target").forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          cursor.classList.add("hover");
         });
-
-        // Add hover effects
-        document.querySelectorAll("a, button, .hover-target").forEach((el) => {
-          el.addEventListener("mouseenter", () => {
-            cursor.classList.add("hover");
-          });
-          el.addEventListener("mouseleave", () => {
-            cursor.classList.remove("hover");
-          });
+        el.addEventListener("mouseleave", () => {
+          cursor.classList.remove("hover");
         });
-      } else {
-        // Hide the cursor element on touch devices
-        cursor.style.display = "none";
-      }
+      });
     </script>
   </body>
 </html>
