@@ -280,6 +280,7 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .header-buttons {
@@ -308,7 +309,7 @@ a:hover {
 }
 
 .logo {
-  width: 13rem;
+  width: 15rem;
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
@@ -718,7 +719,7 @@ a.footer-icon:hover {
   }
 
   .logo {
-    width: 16rem;
+    width: 17rem;
   }
 
   .header-buttons {
