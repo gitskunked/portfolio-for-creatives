@@ -149,7 +149,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-family: var(--heading-typeface);
   font-weight: 700;
   margin-bottom: 1rem;
@@ -166,7 +166,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 200;
   font-style: italic;
   font-family: var(--subheading-typeface);
@@ -735,15 +735,11 @@ a.footer-icon:hover {
   }
 
   h2 {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
 
   h3 {
     font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 1.25rem;
   }
 
   .overlay {
