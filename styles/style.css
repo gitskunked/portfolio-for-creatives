@@ -483,6 +483,12 @@ a:visited {
   gap: 2rem;
 }
 
+.about-image-wrapper {
+  flex-shrink: 0;
+  flex-basis: 40vw;
+  max-width: 100%;
+}
+
 .about-image {
   width: 100%;
   border: 1.5px solid #0458c6;
@@ -495,9 +501,11 @@ a:visited {
   display: flex;
   flex-direction: column;
   max-width: 650px;
+  padding: 0 1rem;
 }
 
 .about-headline {
+  font-size: 8vw;
   margin-bottom: 2rem;
 }
 
@@ -507,6 +515,7 @@ a:visited {
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
+  padding: 0 1rem;
 }
 
 .about-list {
@@ -748,11 +757,14 @@ a.footer-icon:hover {
 
   .about-image {
     padding: 0;
-    max-width: 550px;
   }
 
   .about-image-wrapper {
-    flex-shrink: 2;
+    max-width: 550px;
+  }
+
+  .about-text {
+    padding: 0;
   }
 
   .about-headline {
@@ -762,6 +774,7 @@ a.footer-icon:hover {
   .about-columns {
     flex-direction: row;
     gap: 10vw;
+    padding: 0;
   }
 
   .back-button {
