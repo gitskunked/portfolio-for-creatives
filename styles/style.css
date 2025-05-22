@@ -473,10 +473,10 @@ a:visited {
 
 .about-content {
   display: flex;
+  flex: 1;
   flex-direction: column;
   padding-bottom: 1.5rem;
   gap: 2rem;
-  width: 100%;
 }
 
 .about-image {
@@ -487,13 +487,11 @@ a:visited {
   object-fit: cover;
 }
 
-.about-image-wrapper {
-  flex-shrink: 0;
-}
-
 .about-text {
   display: flex;
   flex-direction: column;
+  max-width: 700px;
+  text-align: left;
 }
 
 .about-columns {
@@ -509,8 +507,16 @@ a:visited {
   list-style-type: disc;
 }
 
-.about-section {
-  flex: 1 1 100%;
+.about-services-education {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.about-experience-awards {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /* Project Page 
@@ -725,6 +731,33 @@ a.footer-icon:hover {
     padding: 1.75rem;
   }
 
+  .about-content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 2.5rem;
+    gap: 3rem;
+  }
+
+  .about-image,
+  .about-text {
+    flex: 1 1 50%;
+  }
+
+  .about-image {
+    padding: 0;
+    max-width: 550px;
+  }
+
+  .about-image-wrapper {
+    flex-shrink: 2;
+  }
+
+  .about-columns {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
   .back-button {
     width: 4.5rem;
     margin-bottom: 1rem;
@@ -769,35 +802,6 @@ a.footer-icon:hover {
 
   .header-buttons {
     gap: 1rem;
-  }
-
-  .about-content {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 3rem;
-    padding-bottom: 2.5rem;
-  }
-
-  .about-wrapper {
-    justify-content: flex-start;
-  }
-
-  .about-image-wrapper {
-    width: 35%;
-  }
-
-  .about-text {
-    max-width: 725px;
-  }
-
-  .about-columns {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 3rem;
-  }
-
-  .about-section {
-    flex: 1 1 45%;
   }
 
   .work-page-grid-item {
@@ -928,10 +932,6 @@ a.footer-icon:hover {
 
   .grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .about-content {
-    gap: 5rem;
   }
 }
 
