@@ -355,12 +355,10 @@ a:visited {
 
 */
 
-/* Full-bleed section override */
 .portfolio {
   padding-bottom: 5rem;
 }
 
-/* Defining the work page grid */
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -413,8 +411,12 @@ a:visited {
   opacity: 0;
   transition: opacity 0.35s ease-in-out;
   display: flex;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   text-align: left;
+}
+
+.overlay-text h2 {
+  margin: 0;
 }
 
 .overlay.pink-overlay {
@@ -449,10 +451,11 @@ a:visited {
 
 .tags li {
   font-size: 0.75rem;
+  line-height: 1.1;
   background: #f5ded9;
   color: #171414;
   border-radius: 10rem;
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 1.1rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.075rem;
@@ -744,7 +747,7 @@ a.footer-icon:hover {
   }
 
   .overlay {
-    padding: 1.75rem;
+    padding: 0.75rem 1.75rem;
   }
 
   .about-content {
