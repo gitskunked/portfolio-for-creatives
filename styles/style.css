@@ -192,9 +192,14 @@ h6 {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 2;
+  font-size: 1.1rem;
+  line-height: 1.75;
   margin-bottom: 1rem;
+}
+
+li {
+  font-size: 1.1rem;
+  line-height: 1.75;
 }
 
 em {
@@ -226,7 +231,6 @@ em {
 
 a:link {
   color: var(--hyperlink-color);
-  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   transition: 0.5s ease-in-out;
@@ -490,8 +494,11 @@ a:visited {
 .about-text {
   display: flex;
   flex-direction: column;
-  max-width: 700px;
-  text-align: left;
+  max-width: 650px;
+}
+
+.about-headline {
+  margin-bottom: 2rem;
 }
 
 .about-columns {
@@ -502,7 +509,7 @@ a:visited {
   gap: 2rem;
 }
 
-.about-section ul {
+.about-list {
   padding-left: 1.5rem;
   list-style-type: disc;
 }
@@ -513,7 +520,7 @@ a:visited {
   justify-content: flex-start;
 }
 
-.about-experience-awards {
+.about-experience-recognition {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -739,11 +746,6 @@ a.footer-icon:hover {
     gap: 3rem;
   }
 
-  .about-image,
-  .about-text {
-    flex: 1 1 50%;
-  }
-
   .about-image {
     padding: 0;
     max-width: 550px;
@@ -753,9 +755,13 @@ a.footer-icon:hover {
     flex-shrink: 2;
   }
 
+  .about-headline {
+    font-size: 5vw;
+  }
+
   .about-columns {
     flex-direction: row;
-    gap: 3rem;
+    gap: 10vw;
   }
 
   .back-button {
@@ -798,6 +804,10 @@ a.footer-icon:hover {
 
   h2 {
     font-size: 2.5rem;
+  }
+
+  .about-columns {
+    gap: 16vw;
   }
 
   .header-buttons {
@@ -903,6 +913,10 @@ a.footer-icon:hover {
 
   .about-content {
     gap: 4rem;
+  }
+
+  .about-columns {
+    gap: 18vw;
   }
 
   .grid {
