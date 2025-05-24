@@ -470,6 +470,8 @@ a:visited {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.075rem;
+  margin-bottom: 0;
+
 }
 
 /* 
