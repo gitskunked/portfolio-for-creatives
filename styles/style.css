@@ -567,7 +567,6 @@ a:visited {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 1rem;
 }
 
 .project-navigation-text {
@@ -914,6 +913,10 @@ a.footer-icon:hover {
 
   .about-bottom {
     gap: 16vw;
+  }
+
+  .project-navigation {
+    margin-top: 1rem;
   }
 
   .project-top {
