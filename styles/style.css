@@ -366,7 +366,7 @@ a:visited {
 */
 
 .portfolio {
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
 }
 
 .grid {
@@ -559,16 +559,15 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.5rem 0 5rem;
+  padding: 1.5rem 0 6rem;
 }
 
 .project-navigation {
   display: flex;
-  flex-direction: row;
-  flex: 1;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+  margin-top: 1rem;
 }
 
 .project-navigation-text {
@@ -576,7 +575,21 @@ a:visited {
   font-weight: 200;
   font-style: italic;
   font-family: var(--subheading-typeface);
+  line-height: 1;
   color: var(--primary-text-color);
+}
+
+.navigation-arrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.arrow-icon {
+  width: 1.75rem;
+  height: auto;
+  display: block;
 }
 
 .arrow-left,
@@ -597,7 +610,6 @@ a:visited {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding-bottom: 1.75rem;
   gap: 1.75rem;
 }
 
@@ -628,6 +640,7 @@ a:visited {
 .project-image-pair {
   display: flex;
   flex-direction: column;
+  gap: 1.75rem;
 }
 
 .ratio-1-1 {
