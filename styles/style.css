@@ -695,6 +695,10 @@ a.footer-icon:hover {
 @media (min-width: 768px) {
   /* TODO: Add styles here for medium devices. */
 
+  h2 {
+    font-size: 2.4rem;
+  }
+  
   .site-wrapper {
     padding: 0 3rem;
   }
@@ -713,10 +717,6 @@ a.footer-icon:hover {
 
   .about-button {
     width: 5rem;
-  }
-
-  h2 {
-    font-size: 2.4rem;
   }
 
   .overlay {
@@ -753,40 +753,12 @@ a.footer-icon:hover {
     gap: 10vw;
     padding: 0;
   }
-
-  .back-button {
-    width: 4.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .work-page-grid-item {
-    border-radius: 1rem;
-  }
-
-  .project-subheading-1,
-  .project-subheading-2,
-  .project-text,
-  .project-text-marginless {
-    max-width: 70vw;
-  }
-
-  .project-headline {
-    font-size: 4rem;
-  }
 }
 
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
   /* TODO: Add or adjust styles here for large devices. */
-
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .site-wrapper {
-    padding: 0 4rem;
-  }
 
   h1 {
     font-size: 7vw;
@@ -800,54 +772,16 @@ a.footer-icon:hover {
     font-size: 2.25rem;
   }
 
-  .about-columns {
-    gap: 16vw;
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .site-wrapper {
+    padding: 0 4rem;
   }
 
   .header-buttons {
     gap: 1rem;
-  }
-
-  .work-page-grid-item {
-    padding: 3rem;
-  }
-
-  .project-subheading-1,
-  .project-subheading-2,
-  .project-text,
-  .project-text-marginless {
-    max-width: 50vw;
-  }
-
-  .project {
-    grid-template-columns: fit-content(100%) 1fr;
-  }
-
-  .project-item-1 {
-    grid-column: 1 / -1; /* Full-width in the first row */
-  }
-
-  .project-item-2 {
-    grid-column: 1 / 2; /* Start in the first column */
-  }
-
-  .project-item-3 {
-    grid-column: 2 / 3; /* Start in the second column next to item 2 */
-    padding: 1rem 0 1rem 2rem;
-    border-left: 2px solid #94c734;
-  }
-
-  .project-item-4 {
-    grid-column: 1 / -1; /* Full-width for stacked layout */
-  }
-
-  .project-margin {
-    margin-bottom: 2rem;
-  }
-
-  .project-headline {
-    font-size: 4.5rem;
-    margin-top: 0;
   }
 
   .logo {
@@ -862,7 +796,7 @@ a.footer-icon:hover {
   }
 
   .hero-main-text {
-    flex-grow: 1; /* This will make the main text area take up available space */
+    flex-grow: 1;
   }
 
   .take-a-peek {
@@ -875,8 +809,8 @@ a.footer-icon:hover {
     max-width: 12rem;
   }
 
-  .back-button {
-    width: 5rem;
+  .about-columns {
+    gap: 16vw;
   }
 
   .footer-details {
@@ -901,6 +835,10 @@ a.footer-icon:hover {
     font-size: 6.75vw;
   }
 
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+  }
+
   .hero-main-text {
     max-width: 60vw;
   }
@@ -911,25 +849,6 @@ a.footer-icon:hover {
 
   .about-columns {
     gap: 18vw;
-  }
-
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
-  }
-
-  .project {
-    grid-gap: 4rem;
-  }
-
-  .project-item-3 {
-    padding: 1rem 0 1rem 4rem;
-  }
-
-  .project-subheading-1,
-  .project-subheading-2,
-  .project-text,
-  .project-text-marginless {
-    max-width: 40vw;
   }
 }
 
@@ -947,13 +866,6 @@ a.footer-icon:hover {
 
 @media (min-width: 1700px) {
   /* TODO: Add styles here for XXX-large devices. */
-
-  .project-subheading-1,
-  .project-subheading-2,
-  .project-text,
-  .project-text-marginless {
-    max-width: 32vw;
-  }
 
   h4 {
     font-size: 1.375rem;
