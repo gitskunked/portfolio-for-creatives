@@ -562,6 +562,28 @@ a:visited {
   padding: 1.5rem 0 5rem;
 }
 
+.project-navigation {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-navigation-text {
+  font-size: 1.35rem;
+  font-weight: 200;
+  font-style: italic;
+  font-family: var(--subheading-typeface);
+  color: var(--primary-text-color);
+}
+
+.arrow-left,
+.arrow-right {
+  margin: 0;
+}
+
 .project-top,
 .project-middle {
   display: flex;
@@ -925,7 +947,8 @@ a.footer-icon:hover {
     font-size: 6.75vw;
   }
 
-  h4 {
+  h4,
+  .project-navigation-text {
     font-size: 1.5rem;
   }
 
