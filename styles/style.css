@@ -122,7 +122,8 @@ body {
 
 /* Make all images responsive */
 img,
-svg {
+svg,
+iframe {
   max-width: 100%;
   height: auto;
   vertical-align: top;
