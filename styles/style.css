@@ -566,8 +566,16 @@ a:visited {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.75rem;
   gap: 2.5rem;
+}
+
+.project-bottom {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-bottom: 1.75rem;
+  gap: 1.75rem;
 }
 
 .project-text {
@@ -578,32 +586,41 @@ a:visited {
   margin-bottom: 2.5rem;
 }
 
-.project-image-1-1-wrapper {
+.project-image-wrapper {
   flex-shrink: 0;
-  flex-basis: 50vw;
   max-width: 100%;
 }
 
-.project-image-1-1 {
+.flex-basis {
+   flex-basis: 50vw;
+}
+
+.project-image {
   width: 100%;
   border: 1.5px solid #f5ded9; /* fallback */
   border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.project-image-pair {
+  display: flex;
+  flex-direction: column;
+}
+
+.ratio-1-1 {
   aspect-ratio: 1 / 1;
-  object-fit: cover;
 }
 
-.project-image-4-3-wrapper {
-  flex-shrink: 0;
-  flex-basis: 50vw;
-  max-width: 100%;
-}
-
-.project-image-4-3 {
-  width: 100%;
-  border: 1.5px solid #f5ded9; /* fallback */
-  border-radius: 0.5rem;
+.ratio-4-3 {
   aspect-ratio: 4 / 3;
-  object-fit: cover;
+}
+
+.ratio-16-9 {
+  aspect-ratio: 16 / 9;
+}
+
+.ratio-4-5 {
+  aspect-ratio: 4 / 5;
 }
 
 .pink-border {
@@ -645,6 +662,7 @@ a:visited {
 }
 
 .fineprint {
+  font-size: 0.9rem;
   color: #f5ded9b5;
   margin: 0;
 }
@@ -788,6 +806,16 @@ a.footer-icon:hover {
   .project-headline {
     font-size: 5vw;
   }
+
+  .project-image-pair {
+    flex-direction: row;
+    gap: 1.75rem;
+  }
+
+  .project-image-pair .project-image-wrapper {
+    flex: 1;
+    min-width: 0; /* prevents overflow if image is too wide */
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -852,21 +880,22 @@ a.footer-icon:hover {
     gap: 16vw;
   }
 
-  .project-top,
+  .project-top {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 3.5rem;
+    gap: 4rem;
+  }
+
   .project-middle {
     flex-direction: row;
     align-items: flex-start;
-    padding-bottom: 3.25rem;
+    padding-bottom: 1.75rem;
     gap: 4rem;
   }
 
   .project-text {
-    order: 1;
     padding: 0;
-  }
-
-  .project-image-1-1-wrapper {
-    order: 2;
   }
 
   .project-headline {
