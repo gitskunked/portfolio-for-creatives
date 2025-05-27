@@ -522,7 +522,6 @@ a:visited {
 
 .about-headline {
   font-size: 8vw;
-  font-weight: 700;
   margin-bottom: 2.5rem;
 }
 
@@ -575,63 +574,18 @@ a:visited {
                                                                                                
 */
 
-.project {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-  margin-top: 7.5rem;
-  padding: 2rem 2rem 0;
-}
-
-.back-button {
-  width: 4rem;
-}
-
-.project-heading-wrapper {
-  width: fit-content;
-}
-
-.project-headline {
-  font-size: 3rem;
-  margin-top: 1rem;
-}
-
-.project-subheading-1 {
-  margin-bottom: 0;
-}
-
-.project-subheading-2 {
-  margin: 0.5rem 0 0.75rem;
-}
-
-.project-text-marginless {
-  max-width: 80vw;
-  margin-bottom: 0;
-}
-
-.project-text {
-  max-width: 80vw;
-}
-
-.project-page-image img {
-  border-radius: 1rem;
-  width: 100%;
-  max-height: 850px;
-}
-
-.project-margin {
-  margin-bottom: 1rem;
-}
-
-.project-team-wrapper {
-  display: flex;
-  flex-direction: row;
-}
-
-.project-team {
+.project-wrapper {
   display: flex;
   flex-direction: column;
-  margin-right: 2rem;
+  justify-content: center;
+  padding: 1.5rem 0 5rem;
+}
+
+.project-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
 }
 
 /* Global Footer
