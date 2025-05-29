@@ -766,13 +766,8 @@ a.footer-icon:hover {
 
 .error-headline {
   color: #ffa3c6;
+  margin-bottom: 3rem;
 }
-
-.error-subheading {
-  font-weight: 400;
-}
-
-/* The best 404 pages have become an art in themselves. Your 404 error page is an opportunity to make a memorable impression on your visitors when they don’t land exactly where they hoped. */
 
 /*
 ███    ███ ███████ ██████  ██  █████       ██████  ██    ██ ███████ ██████  ██ ███████ ███████ 

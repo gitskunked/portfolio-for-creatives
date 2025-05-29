@@ -25,11 +25,34 @@
     />
   </head>
 
-  <body class="error-page">
+  <body class="error-page site-wrapper">
     <div class="error-wrapper">
-      <h3 class="error-headline">404 File Not Found</h3>
-      <h2 class="error-subheading">Whoops! I lost you.</h2>
-      <a href="index.html" class="colored-link">Return to safety.</a>
+      <h1 class="error-headline">Whoops!</h1>
+      <h4>The page you’re looking for</br>is nowhere to be found.</h4>
+      <p><a href="index.html">Return home.</a></p>
     </div>
+       
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
+
+    <script>
+      const cursor = document.getElementById("custom-cursor");
+
+      // Track mouse movement separately from scale transform
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+      });
+
+      // Add hover effects
+      document.querySelectorAll("a, button, .hover-target").forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          cursor.classList.add("hover");
+        });
+        el.addEventListener("mouseleave", () => {
+          cursor.classList.remove("hover");
+        });
+      });
+    </script>
   </body>
 </html>
