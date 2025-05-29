@@ -103,7 +103,6 @@ body {
     center;
   background-size: contain;
 
-  /* Smooth only scale transition (not position) */
   transition: transform 0.5s ease, background-image 0s;
   transform: translate(-50%, -50%) scale(1);
 }
@@ -751,7 +750,6 @@ a.footer-icon:hover {
 ███████ ██   ██ ██   ██  ██████  ██   ██ 
 */
 
-/* TODO: Customize your 404 Error Page */
 
 .error-page {
   display: flex;
@@ -780,8 +778,6 @@ a.footer-icon:hover {
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-  /* TODO: Add styles here for medium devices. */
-
   h2 {
     font-size: 2.4rem;
   }
@@ -849,15 +845,13 @@ a.footer-icon:hover {
 
   .project-image-pair .project-image-wrapper {
     flex: 1;
-    min-width: 0; /* prevents overflow if image is too wide */
+    min-width: 0;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-  /* TODO: Add or adjust styles here for large devices. */
-
   h1 {
     font-size: 7vw;
   }
@@ -957,8 +951,6 @@ a.footer-icon:hover {
 /* X-Large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) {
-  /* TODO: Add styles here for X-large devices. */
-
   h1 {
     font-size: 6.75vw;
   }
@@ -988,8 +980,6 @@ a.footer-icon:hover {
 /* XX-Large devices (larger desktops, 1350px and up) */
 
 @media (min-width: 1350px) {
-  /* TODO: Add styles here for XX-large devices. */
-
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1002,8 +992,6 @@ a.footer-icon:hover {
 /* XXX-Large devices (larger desktops, 1700px and up) */
 
 @media (min-width: 1700px) {
-  /* TODO: Add styles here for XXX-large devices. */
-
   .project-top {
     gap: 12rem;
   }
