@@ -576,6 +576,7 @@ a:visited {
   font-family: var(--subheading-typeface);
   line-height: 1;
   color: var(--primary-text-color);
+  margin-top: 0.15rem;
 }
 
 .navigation-arrow {
