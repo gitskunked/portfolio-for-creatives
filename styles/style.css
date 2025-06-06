@@ -960,6 +960,10 @@ a.footer-icon:hover {
     font-size: 1.5rem;
   }
 
+  .site-wrapper {
+    padding: 0 5rem;
+  }
+
   .hero-main-text {
     max-width: 60vw;
   }
@@ -994,6 +998,14 @@ a.footer-icon:hover {
 @media (min-width: 1700px) {
   .project-top {
     gap: 12rem;
+  }
+}
+
+/* XXXX-Large devices (larger desktops, 1900px and up) */
+
+@media (min-width: 1900px) {
+    .about-text {
+    max-width: 750px;
   }
 }
 
