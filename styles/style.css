@@ -612,6 +612,15 @@ a:visited {
   gap: 1.75rem;
 }
 
+.project-image-wrapper.flex-basis-1-1 {
+  order: 1;
+}
+
+.project-text-summary {
+  order: 2;
+  padding: 0 1rem 0.75rem;
+}
+
 .project-text {
   padding: 0 1rem;
 }
@@ -926,6 +935,15 @@ a.footer-icon:hover {
     padding-bottom: 1.75rem;
     gap: 4rem;
   }
+
+  .project-image-wrapper.flex-basis-1-1 {
+  order: 2;
+}
+
+  .project-text-summary {
+  order: 1;
+  padding: 0;
+}
 
   .project-text {
     padding: 0;
