@@ -30,9 +30,6 @@ Imported stylesheets. Remove the ones you do not want to use.
 
 /*
 
-X-Small devices (portrait phones, less than 576px) 
-No media query for `xs` since this is the default in Bootstrap 
-
 ███    ███  ██████  ██████  ██ ██      ███████     ███████ ██ ██████  ███████ ████████ 
 ████  ████ ██    ██ ██   ██ ██ ██      ██          ██      ██ ██   ██ ██         ██    
 ██ ████ ██ ██    ██ ██████  ██ ██      █████       █████   ██ ██████  ███████    ██    
@@ -781,6 +778,30 @@ a.footer-icon:hover {
 ██  ██  ██ ██      ██   ██ ██ ██   ██     ██ ▄▄ ██ ██    ██ ██      ██   ██ ██ ██           ██ 
 ██      ██ ███████ ██████  ██ ██   ██      ██████   ██████  ███████ ██   ██ ██ ███████ ███████ 
 */
+
+/* X-Small devices (portrait phones, less than 576px)  */
+
+@media (max-width: 500px) {
+  .work-button {
+    width: 3.5rem;
+  }
+
+  .about-button {
+    width: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .overlay-text h4 {
+    font-size: 1.15rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}
 
 /* Medium devices (tablets, 768px and up) */
 
