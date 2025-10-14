@@ -211,6 +211,9 @@ strong {
 }
 
 .light-text {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.075rem;
   color: #f5ded9b5;
 }
 
@@ -526,14 +529,14 @@ a:visited {
   list-style-type: disc;
 }
 
-.about-services-education {
+.about-left {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 1rem;
 }
 
-.about-experience-recognition {
+.about-right {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -795,7 +798,7 @@ a.footer-icon:hover {
   }
 
   .overlay-text h4 {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
 
   h4 {
